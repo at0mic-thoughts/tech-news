@@ -18,12 +18,31 @@
     footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
     nav { margin-bottom: 2rem; }
     nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: space-between; align-items: center; }
+    .podcast-player .podcast-meta span { color: #8b949e; font-size: 0.8rem; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
   </style>
 </head>
 <body>
   <nav><a href="../../index.html">← All Editions</a></nav>
 
   <h1>☀️ Tech & AI Daily — Monday, March 9, 2026</h1>
+
+  <div class="podcast-player">
+    <h3>🎙️ Listen to today's digest</h3>
+    <audio controls preload="metadata">
+      <source src="2026-03-09.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="podcast-meta">
+      <span>AI-generated podcast by NotebookLM</span>
+      <a href="2026-03-09.m4a" download>⬇ Download MP3</a>
+    </div>
+  </div>
 
   <h2>⚡ Must Know</h2>
 
