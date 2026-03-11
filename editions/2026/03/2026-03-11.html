@@ -9,9 +9,10 @@
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
     h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
     .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
-    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
     a { color: #58a6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
     .meta { color: #8b949e; font-size: 0.85rem; }
     .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
     footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
@@ -23,24 +24,17 @@
     .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
     .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
     .podcast-player .podcast-meta a:hover { background: #2ea043; }
-    .deep-dive { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0; }
+    .deep-dive { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin: 0.5rem 0; }
     .pin { color: #f0883e; }
 
-    /* Collapsible items */
-    details { margin-bottom: 0.75rem; border-left: 2px solid #30363d; padding-left: 0.75rem; }
-    details[open] { border-left-color: #58a6ff; }
-    details summary { cursor: pointer; font-weight: 600; color: #e6edf3; padding: 0.5rem 0; list-style: none; display: flex; align-items: baseline; gap: 0.5rem; }
-    details summary::-webkit-details-marker { display: none; }
-    details summary::before { content: '▸'; color: #8b949e; font-size: 0.85rem; transition: transform 0.2s; flex-shrink: 0; }
-    details[open] summary::before { content: '▾'; color: #58a6ff; }
-    details summary:hover { color: #58a6ff; }
-    details .item-body { padding: 0.25rem 0 0.75rem 1.25rem; }
-    details .item-body p { margin: 0.5rem 0; }
-
-    /* Expand/collapse all controls */
-    .expand-controls { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.8rem; }
-    .expand-controls button { background: #21262d; border: 1px solid #30363d; color: #8b949e; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.8rem; }
-    .expand-controls button:hover { color: #58a6ff; border-color: #58a6ff; }
+    /* Collapsible sections */
+    details.section { margin-bottom: 0.5rem; }
+    details.section summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; }
+    details.section summary::-webkit-details-marker { display: none; }
+    details.section summary::after { content: '▾'; color: #8b949e; font-size: 0.75rem; margin-left: 0.5rem; transition: transform 0.2s; }
+    details.section:not([open]) summary::after { content: '▸'; }
+    details.section summary h2 { margin: 0; color: #f0883e; font-size: 1.2rem; }
+    details.section summary:hover h2 { color: #58a6ff; }
   </style>
 </head>
 <body>
@@ -59,64 +53,47 @@
     </div>
   </div>
 
-  <div class="expand-controls">
-    <button onclick="document.querySelectorAll('details').forEach(d=>d.open=true)">Expand all</button>
-    <button onclick="document.querySelectorAll('details').forEach(d=>d.open=false)">Collapse all</button>
-  </div>
+  <details class="section" open>
+    <summary><h2>⚡ Must Know</h2></summary>
 
-  <h2>⚡ Must Know</h2>
-
-  <details open>
-    <summary><span class="pin">📌</span> ⚖️ Anthropic Sues Trump Administration Over "Supply Chain Risk" Label</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong><span class="pin">📌</span> ⚖️ Anthropic Sues Trump Administration Over "Supply Chain Risk" Label</strong>
       <p>This is a big deal for the entire AI safety ecosystem. Anthropic filed suit in federal court after the Pentagon designated it a "supply chain risk" because it refused to allow unrestricted military use of Claude. The designation forces federal agencies to stop using Anthropic's tech and requires defense contractors to eliminate it from their supply chains. Anthropic alleges First Amendment retaliation and that the government exceeded the scope of supply chain risk law. This isn't just corporate drama; it's the first real legal test of whether AI companies can maintain ethical red lines against government pressure.</p>
       <p class="meta"><a href="https://apnews.com/article/anthropic-trump-pentagon-hegseth-ai-104c6c39306f1adeea3b637d2c1c601b">AP News</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🤖 Meta Acquires Moltbook, the Social Network for AI Agents</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🤖 Meta Acquires Moltbook, the Social Network for AI Agents</strong>
       <p>Meta bought Moltbook, a Reddit-style forum where AI agents (not humans) post and interact. The founders are joining Meta Superintelligence Labs. This sounds absurd until you realize Meta is positioning for a future where AI agents are first-class internet citizens that need their own social infrastructure. Whether that future is six months or six years away is the question, but Meta is betting real money on it.</p>
       <p class="meta"><a href="https://www.axios.com/2026/03/10/meta-facebook-moltbook-agent-social-network">Axios</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🛒 Amazon Wins Court Order Blocking Perplexity's AI Shopping Agent</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🛒 Amazon Wins Court Order Blocking Perplexity's AI Shopping Agent</strong>
       <p>A federal judge temporarily blocked Perplexity's Comet browser from accessing Amazon to shop on behalf of users. This is the first major legal ruling on agentic commerce, and it landed firmly on the "platforms control access" side. The implications ripple outward: if AI agents can't act autonomously on existing platforms, the entire "agents will handle your shopping" vision needs a different path.</p>
       <p class="meta"><a href="https://www.theverge.com/ai-artificial-intelligence/892401/amazon-perplexity-ai-shopping-agent-court-order">The Verge</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>💰 Yann LeCun's AMI Labs Raises $1.03B at $3.5B Valuation</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>💰 Yann LeCun's AMI Labs Raises $1.03B at $3.5B Valuation</strong>
       <p>LeCun left Meta, and now he's backed by over a billion dollars to prove that LLMs are a dead end. AMI Labs is building "world models" that understand physical reality through video, not just text. Europe's largest seed round, which is remarkable. Whether LeCun is right that autoregressive text models are fundamentally limited remains to be seen, but $1B buys a lot of experiments.</p>
       <p class="meta"><a href="https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/">Wired</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🔧 Amazon Now Requires Senior Engineer Sign-Off on AI-Assisted Code Changes</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🔧 Amazon Now Requires Senior Engineer Sign-Off on AI-Assisted Code Changes</strong>
       <p>After a series of production outages traced to AI-generated code, Amazon mandated that junior and mid-level engineers get a senior engineer's approval before deploying AI-assisted changes. 363 points on HN with 344 comments, mostly people saying "this is just good engineering practice." The real story: the largest cloud provider in the world just admitted that vibe coding in production has consequences.</p>
       <p class="meta"><a href="https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/">Ars Technica</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>👁️ Age Verification Tools Built for "Child Safety" Are Surveilling Adults</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>👁️ Age Verification Tools Built for "Child Safety" Are Surveilling Adults</strong>
       <p>503 points on HN, which tells you how much this resonated. CNBC investigation reveals that the identity verification systems mandated by child safety laws are collecting and storing biometric data on adults at scale. The tools are also wildly inaccurate, with false positive rates that effectively block legitimate users.</p>
       <p class="meta"><a href="https://www.cnbc.com/2026/03/08/social-media-child-safety-internet-ai-surveillance.html">CNBC</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary><span class="pin">📌</span> 🍎 Launch HN: RunAnywhere (YC W26) — Faster AI Inference on Apple Silicon</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong><span class="pin">📌</span> 🍎 Launch HN: RunAnywhere (YC W26) — Faster AI Inference on Apple Silicon</strong>
       <p>A YC W26 startup building optimized AI inference specifically for Apple Silicon. 168 points on HN. For anyone running local models on a Mac, this could be significant. The CLI tool promises meaningful speedups over stock MLX.</p>
       <p class="meta"><a href="https://github.com/RunanywhereAI/rcli">GitHub</a> · Mar 10</p>
     </div>
@@ -124,75 +101,59 @@
 
   <hr class="section-divider">
 
-  <h2>📡 Worth Knowing</h2>
+  <details class="section" open>
+    <summary><h2>📡 Worth Knowing</h2></summary>
 
-  <details>
-    <summary><span class="pin">📌</span> 🤖 "Agents That Run While I Sleep"</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong><span class="pin">📌</span> 🤖 "Agents That Run While I Sleep"</strong>
       <p>Claude Code Camp post on building autonomous agents that work overnight. 176 points on HN. The dream of every OpenClaw user.</p>
       <p class="meta"><a href="https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep">Claude Code Camp</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🐧 Debian Decides Not to Decide on AI-Generated Contributions</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🐧 Debian Decides Not to Decide on AI-Generated Contributions</strong>
       <p>After months of debate, Debian punted on creating a formal policy. 257 points on HN. The open source community still can't agree on this.</p>
       <p class="meta"><a href="https://lwn.net/SubscriberLink/1061544/125f911834966dd0/">LWN</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🦀 Redox OS Adopts Strict No-LLM Policy</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🦀 Redox OS Adopts Strict No-LLM Policy</strong>
       <p>359 points on HN. Certificate of Origin + complete ban on AI-generated code. Polar opposite of Debian's approach.</p>
       <p class="meta"><a href="https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md">GitLab</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🔐 Intel Demos Chip That Computes on Encrypted Data (FHE)</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🔐 Intel Demos Chip That Computes on Encrypted Data (FHE)</strong>
       <p>Fully homomorphic encryption in silicon. 212 points on HN. If this scales, it changes everything about cloud data privacy.</p>
       <p class="meta"><a href="https://spectrum.ieee.org/fhe-intel">IEEE Spectrum</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>📊 "I Put My Whole Life Into a Single Database"</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>📊 "I Put My Whole Life Into a Single Database"</strong>
       <p>Felix Krause's quantified self project. 406 points on HN. Fascinating and slightly terrifying in equal measure.</p>
       <p class="meta"><a href="https://howisfelix.today/">howisfelix.today</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🧠 MIT Study: Compute Power, Not Secret Sauce, Drives Most AI Breakthroughs</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🧠 MIT Study: Compute Power, Not Secret Sauce, Drives Most AI Breakthroughs</strong>
       <p>Research finds most LLM progress comes from scaling compute, not novel algorithms. Validates the scaling hypothesis.</p>
       <p class="meta"><a href="https://roboticsandautomationnews.com/2026/03/10/mit-study-suggests-computing-power-not-secret-sauce-drives-most-ai-model-breakthroughs/99457/">Robotics & Automation News</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary>🏆 How I Topped the HuggingFace Leaderboard on Two Gaming GPUs</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🏆 How I Topped the HuggingFace Leaderboard on Two Gaming GPUs</strong>
       <p>Duplicating 7 middle layers in Qwen2-72B improved all benchmarks. No weight modifications. Developed on 2x RTX 4090s in a basement. Garage science at its finest. 248 points on HN.</p>
       <p class="meta"><a href="https://dnhkng.github.io/posts/rys/">Blog</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary><span class="pin">📌</span> Anthropic Expanding to Australia & New Zealand</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong><span class="pin">📌</span> Anthropic Expanding to Australia & New Zealand</strong>
       <p>Sydney office opening, fourth APAC location after Tokyo, Bengaluru, and Seoul.</p>
       <p class="meta"><a href="https://twitter.com/AnthropicAI">X/Twitter</a> · Mar 10</p>
     </div>
-  </details>
 
-  <details>
-    <summary><span class="pin">📌</span> Claude Code Gets /btw Command</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong><span class="pin">📌</span> Claude Code Gets /btw Command</strong>
       <p>Side chain conversations while Claude is working on your main task. Quality of life upgrade.</p>
       <p class="meta"><a href="https://twitter.com/trq212">X/Twitter</a> · Mar 10</p>
     </div>
@@ -200,8 +161,8 @@
 
   <hr class="section-divider">
 
-  <details open>
-    <summary style="font-size: 1.2rem; color: #f0883e;">🔍 Deep Dive: The Agentic Commerce Legal Battle</summary>
+  <details class="section" open>
+    <summary><h2>🔍 Deep Dive: The Agentic Commerce Legal Battle</h2></summary>
     <div class="deep-dive">
       <p>The Amazon vs. Perplexity ruling is the first shot in what will define AI's relationship with existing platforms throughout 2026. The core question: can AI agents act autonomously on platforms that were built for human users?</p>
       <p>The judge sided with Amazon, ruling that Perplexity's Comet browser accessing password-protected sections of Amazon without authorization violated the CFAA. Perplexity argued that users explicitly granted their agent permission to shop, making it no different from a browser extension. The court disagreed.</p>
@@ -212,27 +173,23 @@
 
   <hr class="section-divider">
 
-  <h2>🔧 Repos & Tools of the Day</h2>
+  <details class="section" open>
+    <summary><h2>🔧 Repos & Tools of the Day</h2></summary>
 
-  <details>
-    <summary>🦌 bytedance/deer-flow — SuperAgent Harness</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🦌 bytedance/deer-flow — SuperAgent Harness</strong>
       <p>Open source SuperAgent harness from ByteDance that researches, codes, and creates. Supports sandboxes, memories, tools, skills, and subagents. 28K stars, gaining 1,443/day.</p>
       <p class="meta"><a href="https://github.com/bytedance/deer-flow">View on GitHub</a></p>
     </div>
-  </details>
 
-  <details>
-    <summary>🌐 alibaba/page-agent — In-Page GUI Agent</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong>🌐 alibaba/page-agent — In-Page GUI Agent</strong>
       <p>JavaScript in-page GUI agent. Control web interfaces with natural language. 895 stars today. Browser automation with actual comprehension.</p>
       <p class="meta"><a href="https://github.com/alibaba/page-agent">View on GitHub</a></p>
     </div>
-  </details>
 
-  <details>
-    <summary><span class="pin">📌</span> volcengine/OpenViking — Context Database for AI Agents</summary>
-    <div class="item-body">
+    <div class="item">
+      <strong><span class="pin">📌</span> volcengine/OpenViking — Context Database for AI Agents</strong>
       <p>Open source context database designed for AI agents (explicitly mentions OpenClaw compatibility). Unifies management of memory, resources, and skills through a file system paradigm. 5.6K stars.</p>
       <p class="meta"><a href="https://github.com/volcengine/OpenViking">View on GitHub</a></p>
     </div>
