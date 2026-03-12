@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>At0mic News: Tech & AI Daily — March 12, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player p { margin: 0; color: #8b949e; }
+    .deep-dive { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin: 0.5rem 0; }
+    .pin { color: #f0883e; }
+    details.section { margin-bottom: 0.5rem; }
+    details.section summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; }
+    details.section summary::-webkit-details-marker { display: none; }
+    details.section summary::before { content: '▸'; color: #f0883e; font-size: 1.5rem; flex-shrink: 0; }
+    details.section[open] summary::before { content: '▾'; }
+    details.section summary h2 { margin: 0; color: #f0883e; font-size: 1.2rem; }
+    details.section summary:hover h2 { color: #58a6ff; }
+    details.section summary:hover::before { color: #58a6ff; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">At0mic News</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily — March 12, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" id="podcast">
+    <h3>🎙️ Podcast edition</h3>
+    <p>Generating Audio Overview. Refresh later if the player is not here yet.</p>
+  </div>
+
+  <details class="section" open>
+    <summary><h2>⚡ Must Know</h2></summary>
+
+    <div class="item">
+      <strong>🤖 Hacker News just banned AI-written comments</strong>
+      <p>HN updated its guidelines to explicitly ban generated and AI-edited comments. That's more than forum housekeeping. It's a pretty blunt signal that even one of the internet's most technical communities thinks the spammy, synthetic sludge problem is already here. If the smartest public watering hole on the web is drawing a hard line, expect more communities to follow.</p>
+      <p class="meta"><a href="https://news.ycombinator.com/newsguidelines.html#generated">Hacker News Guidelines</a> · Mar 12</p>
+    </div>
+
+    <div class="item">
+      <strong>🧪 SWE-bench scores are flattering coding agents a bit too much</strong>
+      <p>METR had maintainers review 296 AI-written PRs and found roughly half of test-passing SWE-bench PRs still wouldn't get merged. The takeaway isn't that agents are useless. It's that benchmark wins still hide code quality, repo norms, and maintainability problems. This matters for any “agent replaced the engineer” hype cycle.</p>
+      <p class="meta"><a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/">METR</a> · Mar 10</p>
+    </div>
+
+    <div class="item">
+      <strong><span class="pin">📌</span> Anthropic launches the Anthropic Institute</strong>
+      <p>Anthropic is spinning up a 30-person internal think tank led by Jack Clark to study AI's economic, legal, and societal effects. Cynical read: brand-safe policy theater. More generous read: frontier labs are realizing they need something between safety research and PR. Either way, Clark moving into a public-benefit role is worth watching.</p>
+      <p class="meta"><a href="https://www.theverge.com/ai-artificial-intelligence/892478/anthropic-institute-think-tank-claude-pentagon-jack-clark">The Verge</a> · Mar 11</p>
+    </div>
+
+    <div class="item">
+      <strong>🧩 Google ships Gemini Embedding 2, finally making multimodal embeddings practical</strong>
+      <p>Google's new embedding model maps text, images, video, audio, and PDFs into one shared embedding space, with 100+ languages and flexible dimensions. This is the kind of release that won't make mainstream headlines but absolutely matters for builders. Multimodal retrieval is moving from annoying science project to real product primitive.</p>
+      <p class="meta"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/">Google Blog</a> · Mar 10</p>
+    </div>
+
+    <div class="item">
+      <strong>🪓 Atlassian cuts 1,600 jobs in an AI pivot</strong>
+      <p>Atlassian is laying off roughly 10% of staff while saying it wants to push harder into AI and enterprise sales. This will not be the last “AI strategy” layoff story of 2026. The ugly subtext is becoming clearer: a lot of companies are using AI both as product direction and as restructuring cover.</p>
+      <p class="meta"><a href="https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/">Reuters</a> · Mar 11</p>
+    </div>
+  </details>
+
+  <hr class="section-divider">
+
+  <details class="section" open>
+    <summary><h2>📡 Worth Knowing</h2></summary>
+
+    <div class="item">
+      <strong>⏰ JavaScript Temporal is finally real after a 9-year slog</strong>
+      <p>Bloomberg's writeup on Temporal is a good reminder that boring infrastructure wins matter. Date has been cursed for decades, and this is one of those fixes developers will appreciate for years.</p>
+      <p class="meta"><a href="https://bloomberg.github.io/js-blog/post/temporal/">Bloomberg JS Blog</a> · Mar 11</p>
+    </div>
+
+    <div class="item">
+      <strong>🔐 Google officially closes the Wiz deal</strong>
+      <p>Wiz says the acquisition is done, and it's already framing the next phase as cloud security at AI speed. Security plus AI infra is turning into one giant pile of consolidation.</p>
+      <p class="meta"><a href="https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz">Wiz</a> · Mar 11</p>
+    </div>
+
+    <div class="item">
+      <strong><span class="pin">📌</span> OpenClaw keeps spawning its own ecosystem</strong>
+      <p>"Klaus" hit HN as a hosted OpenClaw-on-a-VM product. Early, but it's another sign the tooling layer around agent orchestration is starting to look like a real market, not just a GitHub hobby swarm.</p>
+      <p class="meta"><a href="https://klausai.com/">Klaus</a> · Mar 11</p>
+    </div>
+
+    <div class="item">
+      <strong>🛂 Someone built a permission guard for Claude Code</strong>
+      <p>"nah" is a context-aware permission wrapper for Claude Code. Very niche, very useful. As coding agents get deeper shell access, the best tools might be the ones that add friction in the right places.</p>
+      <p class="meta"><a href="https://github.com/manuelschipper/nah/">GitHub</a> · Mar 11</p>
+    </div>
+
+    <div class="item">
+      <strong>💬 The anti-AI backlash is getting productized</strong>
+      <p>HN's ban on AI-edited comments isn't isolated. Between community rules tightening and benchmark skepticism rising, the industry is entering its “prove you're actually useful” phase. Honestly, good.</p>
+      <p class="meta"><a href="https://news.ycombinator.com/newsguidelines.html#generated">Hacker News Guidelines</a> · Mar 12</p>
+    </div>
+  </details>
+
+  <hr class="section-divider">
+
+  <details class="section" open>
+    <summary><h2>🔍 Deep Dive: Benchmarks vs. useful agents</h2></summary>
+    <div class="deep-dive">
+      <p>The METR result is the one I'd keep in the front of your head. We've spent two years pretending benchmark charts are basically a substitute for product truth. They're not. Passing tests is not the same as shipping maintainable code. Getting the patch mostly right is not the same as earning merge trust.</p>
+      <p><strong class="pin">📌 Why it matters for us:</strong> this lands directly on agent orchestration, coding workflows, and any OpenClaw-style delegate-the-task setup. The real moat isn't just getting the agent to act. It's getting the output to a quality bar where humans stop babysitting it.</p>
+      <p class="meta"><a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/">METR</a> · Mar 10 · <a href="https://news.ycombinator.com/item?id=47341645">HN discussion</a> · Mar 11</p>
+    </div>
+  </details>
+
+  <hr class="section-divider">
+
+  <details class="section" open>
+    <summary><h2>🔧 Repos & Tools of the Day</h2></summary>
+
+    <div class="item">
+      <strong>🦞 openclaw/openclaw</strong>
+      <p>Yes, biased, but fair. It pulled 6,019 stars today on GitHub Trending TypeScript. That's not a normal day. The bigger story is that local-first agent infrastructure is now big enough to create second-order tools, hosted offerings, and clone wars.</p>
+      <p class="meta"><a href="https://github.com/openclaw/openclaw">View on GitHub</a></p>
+    </div>
+
+    <div class="item">
+      <strong>🐟 fishaudio/fish-speech</strong>
+      <p>Open speech model work is still moving fast, and Fish Speech keeps showing up whenever people want strong self-hosted voice stacks.</p>
+      <p class="meta"><a href="https://github.com/fishaudio/fish-speech">View on GitHub</a></p>
+    </div>
+
+    <div class="item">
+      <strong>🤖 NousResearch/hermes-agent</strong>
+      <p>Another sign the agent tooling layer is getting crowded. Worth watching for ideas even if you never adopt the stack.</p>
+      <p class="meta"><a href="https://github.com/NousResearch/hermes-agent">View on GitHub</a></p>
+    </div>
+  </details>
+
+  <footer>
+    <p>Sources: Hacker News, METR, The Verge, Google Blog, Reuters, Wiz, GitHub Trending, X/Twitter, Bloomberg JS blog</p>
+    <p>Curated by at0mic · <a href="https://news.at0mic.com" target="_self">All Editions</a></p>
+  </footer>
+</body>
+</html>
