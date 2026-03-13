@@ -13,6 +13,8 @@
     .title-row h1 { margin: 0; flex: 1; }
     .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
     .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
     a { color: #58a6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .item { margin-bottom: 1.5rem; }
@@ -24,17 +26,10 @@
     nav a { color: #8b949e; }
     .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
     .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
-    .podcast-player p { margin: 0; color: #8b949e; }
-    .deep-dive { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin: 0.5rem 0; }
-    .pin { color: #f0883e; }
-    details.section { margin-bottom: 0.5rem; }
-    details.section summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0; }
-    details.section summary::-webkit-details-marker { display: none; }
-    details.section summary::before { content: '▸'; color: #f0883e; font-size: 1.5rem; flex-shrink: 0; }
-    details.section[open] summary::before { content: '▾'; }
-    details.section summary h2 { margin: 0; color: #f0883e; font-size: 1.2rem; }
-    details.section summary:hover h2 { color: #58a6ff; }
-    details.section summary:hover::before { color: #58a6ff; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
   </style>
 </head>
 <body>
@@ -46,120 +41,99 @@
     <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
   </div>
 
-  <div class="podcast-player" id="podcast">
-    <h3>🎙️ Podcast edition</h3>
-    <p>Generating Audio Overview. Refresh later if the player is not here yet.</p>
+  <!-- Podcast player placeholder - will be populated after audio generation -->
+
+  <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <strong>🌊 Google's Groundsource Uses Gemini to Parse Global News</strong>
+    <p>Google Research launched Groundsource, using Gemini models to turn 5M+ unstructured news reports into a structured dataset of 2.6M+ flood events across 150+ countries. Enables 24-hour flash flood forecasting. The methodological breakthrough: multimodal LLM pipelines for synthesizing public data into open benchmarks could transform under-instrumented domains.</p>
+    <p class="meta"><a href="https://www.marktechpost.com/2026/03/13/google-ai-introduces-groundsource-a-new-methodology-that-uses-gemini-model-to-transform-unstructured-global-news-into-actionable-historical-data/">MarkTechPost</a> · Mar 13</p>
   </div>
 
-  <details class="section" open>
-    <summary><h2>⚡ Must Know</h2></summary>
+  <div class="item">
+    <strong>🏦 Anthropic Institute: New Public Benefit Initiative</strong>
+    <p>📌 Anthropic announced The Anthropic Institute, led by Jack Clark as Head of Public Benefit. Interdisciplinary team of ML engineers, economists, and social scientists will research AI challenges and "tell the world what we are seeing" from inside a frontier lab. Addresses economic disruption and societal impacts of powerful AI.</p>
+    <p class="meta"><a href="https://twitter.com/AnthropicAI">X/Twitter</a> · Mar 11</p>
+  </div>
 
-    <div class="item">
-      <strong>🥑 Meta's "Avocado" AI Model Delayed to May — Can't Keep Up With Gemini 3.0</strong>
-      <p>The NYT broke the story: Meta's next-gen AI model (code-named Avocado) has been pushed from a March launch to at least May. It beats their previous model and Gemini 2.5, but falls short of Gemini 3.0. With Meta spending $135B on AI infrastructure, the pressure is on. This is starting to feel like the model race has real casualties — and Meta's open-source strategy might not be enough when you're playing catch-up on frontier performance.</p>
-      <p class="meta"><a href="https://www.reuters.com/technology/meta-delays-rollout-new-ai-model-nyt-reports-2026-03-12/">Reuters</a> · Mar 12</p>
-    </div>
+  <div class="item">
+    <strong>💾 Instagram Killing E2E Encryption on May 8th</strong>
+    <p>Meta is ending end-to-end encryption for Instagram DMs after May 8th, 2026. Users getting notification banners. Major privacy rollback affects millions of users worldwide. Comes amid broader Meta privacy policy changes and regulatory pressures.</p>
+    <p class="meta"><a href="https://help.instagram.com/491565145294150">Instagram Help</a> · Mar 13</p>
+  </div>
 
-    <div class="item">
-      <strong>🔒 Instagram Killing End-to-End Encryption on DMs — May 8</strong>
-      <p>Meta confirmed it's removing E2E encryption from Instagram DMs after May 8. This is a massive privacy regression — encryption was added in Dec 2023 specifically for user privacy. The likely driver: enabling AI-powered content scanning for "safety." Whatever the reasoning, this is moving backwards. If you use Instagram DMs for anything sensitive, time to switch to Signal.</p>
-      <p class="meta"><a href="https://9to5google.com/2026/03/13/meta-is-killing-end-to-end-encryption-for-instagram-dms-soon/">9to5Google</a> · Mar 13</p>
-    </div>
+  <div class="item">
+    <strong>🔌 Qatar Helium Shortage Puts Chip Supply on 2-Week Clock</strong>
+    <p>Qatar's helium production halt due to LNG facility issues creates critical shortage for semiconductor manufacturing. Industry has ~2 weeks of buffer stock. Helium essential for chip fab cooling systems. Could impact global electronics supply chain if not resolved quickly.</p>
+    <p class="meta"><a href="https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock">Tom's Hardware</a> · Mar 12</p>
+  </div>
 
-    <div class="item">
-      <strong>⚗️ Qatar Helium Shutdown Puts Chip Fabs on a Two-Week Clock</strong>
-      <p>QatarEnergy declared force majeure and shut down ~30% of global helium supply. Helium is essential for semiconductor manufacturing (cooling, leak detection). If the shutdown extends past two weeks, chip fabs face months of supply chain disruption. SK hynix already diversifying suppliers. This is the kind of supply chain fragility that makes AI hardware costs unpredictable.</p>
-      <p class="meta"><a href="https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock">Tom's Hardware</a> · Mar 13 · <a href="https://www.reuters.com/business/energy/helium-prices-soar-qatar-lng-halt-exposes-fragile-supply-chain-2026-03-12/">Reuters</a></p>
-    </div>
+  <div class="item">
+    <strong>👁️ NSA Section 702 Abuses: Wyden Sounds Alarm Again</strong>
+    <p>Senator Wyden warns Americans will be "stunned" by NSA activities under Section 702. Hints at upcoming revelations about warrantless surveillance. Timing aligns with congressional Section 702 renewal debates. Privacy advocates pushing for warrant requirements.</p>
+    <p class="meta"><a href="https://www.techdirt.com/2026/03/12/the-wyden-siren-goes-off-again-well-be-stunned-by-what-the-nsa-is-doing-under-section-702/">TechDirt</a> · Mar 12</p>
+  </div>
 
-    <div class="item">
-      <strong>🕵️ Meta's Dark Money Lobbying Exposed on GitHub</strong>
-      <p>A new GitHub repo documenting Meta's lobbying around the App Store Accountability Act hit #1 on Hacker News (1000+ points, 450+ comments). The findings detail dark money channels and lobbying tactics. Whatever your stance on app store regulation, the transparency here is remarkable — and the community response shows how much appetite there is for accountability.</p>
-      <p class="meta"><a href="https://github.com/upper-up/meta-lobbying-and-other-findings">GitHub</a> · Mar 13</p>
-    </div>
+  <hr class="section-divider">
 
-    <div class="item">
-      <strong>📡 NSA Surveillance Under Fire — Wyden Warns of Secret 702 Interpretation</strong>
-      <p>Senator Wyden says Americans "will be stunned" when a secret interpretation of Section 702 is declassified. FBI queries of Americans' data rose 35% in 2025. A new bipartisan Government Surveillance Reform Act aims to rein it in. The April reauthorization deadline is approaching and the fight is heating up.</p>
-      <p class="meta"><a href="https://www.techdirt.com/2026/03/12/the-wyden-siren-goes-off-again-well-be-stunned-by-what-the-nsa-is-doing-under-section-702/">TechDirt</a> · Mar 12 · <a href="https://www.wired.com/story/us-lawmakers-move-to-kill-the-fbis-warrantless-wiretap-access/">Wired</a></p>
-    </div>
-  </details>
+  <h2>📡 Worth Knowing</h2>
 
-  <details class="section" open>
-    <summary><h2>📡 Worth Knowing</h2></summary>
+  <div class="item">
+    <strong>🚀 "Can I Run AI Locally?" Tool Hits HN Front Page</strong>
+    <p>Simple website to check if your hardware can run local LLMs. Clean UI, practical tool for LocalLLaMA community.</p>
+    <p class="meta"><a href="https://www.canirun.ai/">canirun.ai</a> · Mar 13 · 738pts on HN</p>
+  </div>
 
-    <div class="item">
-      <strong><span class="pin">📌</span> MacBook Neo Runs Windows via Parallels</strong>
-      <p>Parallels confirmed that its Desktop virtualization software is compatible with the new MacBook Neo's A18 Pro chip. ARM versions of Windows and Linux work, but performance is "subpar" compared to M-series machines. Don't expect heavy x86 workloads.</p>
-      <p class="meta"><a href="https://www.macrumors.com/2026/03/13/macbook-neo-runs-windows-11-vm/">MacRumors</a> · Mar 13</p>
-    </div>
+  <div class="item">
+    <strong>⚡ RTX-5090 Hits 2000 TPS with Qwen 3.5 27B</strong>
+    <p>LocalLLaMA user reports insane throughput for document classification. Key: no vision loaded, 128k context, batch size 8.</p>
+    <p class="meta"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1rsz8k6/2000_tps_with_qwen_35_27b_on_rtx5090/">Reddit</a> · Mar 13</p>
+  </div>
 
-    <div class="item">
-      <strong>🌍 Google's Groundsource Uses Gemini to Build Flood Data From Unstructured News</strong>
-      <p>Turned 5M+ public reports into 2.6M+ structured flood events across 150+ countries. The broader pattern — using LLMs to create structured datasets from messy public data — is the real story here. This could become an important template for under-instrumented domains.</p>
-      <p class="meta"><a href="https://www.marktechpost.com/2026/03/13/google-ai-introduces-groundsource-a-new-methodology-that-uses-gemini-model-to-transform-unstructured-global-news-into-actionable-historical-data/">MarkTechPost</a> · Mar 13</p>
-    </div>
+  <div class="item">
+    <strong>🌐 NanoClaw Scores Docker Deal After 6-Week Sprint</strong>
+    <p>Container startup's rapid rise from side project to Docker acquisition. Shows power of developer-focused tools in current market.</p>
+    <p class="meta"><a href="https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/">TechCrunch</a> · Mar 13</p>
+  </div>
 
-    <div class="item">
-      <strong>📊 Qwen 3.5-9B Tops Benchmarks — But That's Not How You Should Pick a Model</strong>
-      <p>A 9B parameter model beating 120B+ models sounds amazing, but XDA's take is right: don't pick models by benchmarks alone. Real-world performance, inference cost, and actual use-case fit matter more than leaderboard scores.</p>
-      <p class="meta"><a href="https://www.xda-developers.com/qwen-3-5-9b-tops-ai-benchmarks-not-how-pick-model/">XDA</a> · Mar 12</p>
-    </div>
+  <div class="item">
+    <strong>🔍 Context Gateway Compresses LLM Input</strong>
+    <p>New tool to compress agent context before hitting the LLM API. Could reduce costs for long-context workflows significantly.</p>
+    <p class="meta"><a href="https://github.com/Compresr-ai/Context-Gateway">GitHub</a> · Mar 13 · 50pts on HN</p>
+  </div>
 
-    <div class="item">
-      <strong>🔐 Bucketsquatting Is Finally Dead</strong>
-      <p>The cloud bucket squatting vulnerability has been patched across major providers. If you've ever worried about S3 bucket naming collisions being exploited, breathe easy. Hit 274 points on HN.</p>
-      <p class="meta"><a href="https://onecloudplease.com/blog/bucketsquatting-is-finally-dead">OneCloudPlease</a> · Mar 13</p>
-    </div>
+  <div class="item">
+    <strong>📖 Swedish E-Government Source Code Leaked</strong>
+    <p>Full codebase from compromised CGI Sverige infrastructure now circulating on dark web. Major security incident affecting government services.</p>
+    <p class="meta"><a href="https://darkwebinformer.com/full-source-code-of-swedens-e-government-platform-leaked-from-compromised-cgi-sverige-infrastructure/">Dark Web Informer</a> · Mar 12 · 186pts on HN</p>
+  </div>
 
-    <div class="item">
-      <strong>🖥️ TUI Studio: Visual Terminal UI Designer</strong>
-      <p>Design terminal UIs visually, export code. 425 points on HN with 244 comments. If you build CLI tools, this is worth a look.</p>
-      <p class="meta"><a href="https://tui.studio/">tui.studio</a> · Mar 13</p>
-    </div>
+  <hr class="section-divider">
 
-    <div class="item">
-      <strong>🤖 Can I Run AI Locally?</strong>
-      <p>Simple tool to check if your hardware can run various AI models locally. 384 points on HN. Handy reference for anyone considering local inference.</p>
-      <p class="meta"><a href="https://www.canirun.ai/">canirun.ai</a> · Mar 13</p>
-    </div>
-  </details>
+  <h2>🔧 Repos & Tools</h2>
 
-  <details class="section" open>
-    <summary><h2>🔍 Deep Dive: Meta's Very Bad Week</h2></summary>
-    <div class="deep-dive">
-      <p>Two encryption reversals. A delayed flagship model. Dark money lobbying exposed. Meta is having one of those weeks where every thread you pull reveals more.</p>
-      <p>The Instagram E2E removal is particularly telling — they added it under competitive pressure from Signal and WhatsApp, and now they're removing it, likely to enable the same AI-powered scanning they've been building across the Meta ecosystem.</p>
-      <p>Meanwhile, Avocado's delay shows that throwing $135B at compute doesn't guarantee frontier performance. Google's Gemini 3.0 remains the bar to clear, and Meta's open-weight approach hasn't translated into competitive closed-model performance.</p>
-      <p><span class="pin">📌</span> <strong>Why it matters for us:</strong> If you're building on Meta's ecosystem (models, platforms), the Avocado delay means Llama's next big upgrade is further out. Plan accordingly.</p>
-    </div>
-  </details>
+  <div class="item">
+    <strong>Microsoft BitNet — Official inference framework for 1-bit LLMs</strong>
+    <p>2,223 stars today, 33k total. Production-ready quantization for extreme efficiency.</p>
+    <p class="meta"><a href="https://github.com/microsoft/BitNet">View on GitHub</a></p>
+  </div>
 
-  <details class="section" open>
-    <summary><h2>🔧 Repo/Tool of the Day</h2></summary>
+  <div class="item">
+    <strong>Heretic — Fully automatic censorship removal for language models</strong>
+    <p>1,162 stars today. Clean approach to model uncensoring without manual intervention.</p>
+    <p class="meta"><a href="https://github.com/p-e-w/heretic">View on GitHub</a></p>
+  </div>
 
-    <div class="item">
-      <strong>langflow-ai/openrag</strong>
-      <p>Comprehensive single-package RAG platform built on Langflow, Docling, and Opensearch. 905 stars today. If you've been stitching together RAG pipelines manually, this bundles the whole stack.</p>
-      <p class="meta"><a href="https://github.com/langflow-ai/openrag">GitHub</a> · 905 ⭐ today</p>
-    </div>
-
-    <div class="item">
-      <strong>p-e-w/heretic</strong>
-      <p>Fully automatic censorship removal for language models. 1,162 stars today. Controversial but technically interesting — removes safety restrictions from LLMs automatically.</p>
-      <p class="meta"><a href="https://github.com/p-e-w/heretic">GitHub</a> · 1,162 ⭐ today</p>
-    </div>
-
-    <div class="item">
-      <strong><span class="pin">📌</span> vectorize-io/hindsight</strong>
-      <p>Agent memory that learns. Persistent memory system for AI agents that improves over time. Relevant to anyone building agent systems.</p>
-      <p class="meta"><a href="https://github.com/vectorize-io/hindsight">GitHub</a> · 597 ⭐ today</p>
-    </div>
-  </details>
+  <div class="item">
+    <strong>TUI Studio — Visual terminal UI design tool</strong>
+    <p>518 points on HN. Browser-based TUI prototyping with real-time preview.</p>
+    <p class="meta"><a href="https://tui.studio/">View on TUI Studio</a></p>
+  </div>
 
   <footer>
-    <p>Sources: Hacker News, Reddit, X/Twitter, GitHub Trending, Reuters, NYT, Tom's Hardware, Wired, TechDirt, MacRumors, XDA, 9to5Google, MarkTechPost, Latent Space</p>
-    <p>☀️ <a href="https://news.at0mic.com">At0mic News</a> · <a href="https://ko-fi.com/at0micnews">Support on Ko-fi</a></p>
+    <p>Sources: Hacker News, Reddit (MachineLearning, LocalLLaMA), X/Twitter, GitHub Trending, Google Search</p>
+    <p>Curated by at0mic</p>
   </footer>
 </body>
 </html>
