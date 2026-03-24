@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>At0mic News: Tech & AI Daily</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    h1 { color: #58a6ff; font-size: 1.8rem; }
+    p.tagline { color: #8b949e; margin-top: -0.5rem; margin-bottom: 2rem; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 0.75rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .date { color: #8b949e; font-size: 0.85rem; margin-right: 0.5rem; }
+    .audio-badge { background: #238636; color: #fff; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; margin-left: 0.5rem; }
+    .title-row { display: block; }
+    .title-row h1 { margin: 0; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+
+    /* Subscribe form */
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <p class="brand">At0mic News</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily</h1>
+  </div>
+  <p class="tagline">Daily AI & tech news digest with podcast. Curated before you wake up.</p>
+
+  <h2>March 2026</h2>
+  <ul>
+    <li>
+      <span class="date">Mar 24</span>
+      <a href="editions/2026/03/2026-03-24.html">iPhone 17 Pro runs 400B LLM, Qwen 3.5-Max hits 5th globally, Cursor ships frontier coding model</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 23</span>
+      <a href="editions/2026/03/2026-03-23.html">OpenClaw security audit hits HN, Flash-MoE runs 397B model on laptop, MIT releases 2026 diffusion course</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 22</span>
+      <a href="editions/2026/03/2026-03-22.html">Cursor/Moonshot resolved, ArXiv independence, US AI policy framework, DeepSeek talent exodus</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 21</span>
+      <a href="editions/2026/03/2026-03-21.html">OpenCode goes open source, GLM-5.1 drops on Reddit, Super Micro scandal rocks AI infrastructure</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 20</span>
+      <a href="editions/2026/03/2026-03-20.html">OpenAI acquires Astral, Anthropic vs OpenCode legal drama, Google's 24h Android sideloading</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 19</span>
+      <a href="editions/2026/03/2026-03-19.html">NVIDIA NemoClaw, Snowflake AI sandbox escape, FBI location data purchase, MiniMax M2.7 agentic model</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 18</span>
+      <a href="editions/2026/03/2026-03-18.html">Mistral Forge enterprise training, Unsloth Studio challenges LM Studio, OpenAI mini/nano models</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 17</span>
+      <a href="editions/2026/03/2026-03-17.html">Mistral Small 4 releases, NVIDIA Vera CPU for agentic AI, Claude Code builds Godot games</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 16</span>
+      <a href="editions/2026/03/2026-03-16.html">Anthropic Institute, OpenAI buys Promptfoo, Chrome DevTools MCP, NVIDIA license fix</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 15</span>
+      <a href="editions/2026/03/2026-03-15.html">📰 Weekly Review: LeCun's $1B raise, ArXiv goes independent, Meta's Avocado delayed</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 14</span>
+      <a href="editions/2026/03/2026-03-14.html">Google's Groundsource, Anthropic Institute, Instagram kills E2E encryption, Qatar helium shortage</a>
+    </li>
+    <li>
+      <span class="date">Mar 12</span>
+      <a href="editions/2026/03/2026-03-12.html">HN bans AI comments, METR punctures SWE-bench hype, Anthropic launches think tank</a>
+    </li>
+    <li>
+      <span class="date">Mar 11</span>
+      <a href="editions/2026/03/2026-03-11.html">Anthropic sues Trump admin, Meta buys Moltbook, Amazon blocks Perplexity agents, LeCun raises $1B</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+    <li>
+      <span class="date">Mar 9</span>
+      <a href="editions/2026/03/2026-03-09.html">OpenAI acquires Promptfoo, Claude cheats on benchmarks, Sir Tony Hoare dies</a>
+      <span class="audio-badge">🎙️ podcast</span>
+    </li>
+  </ul>
+
+
+  <!-- Subscribe Form -->
+  <div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name" style="max-width: 160px;">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p>Curated by at0mic</p>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
