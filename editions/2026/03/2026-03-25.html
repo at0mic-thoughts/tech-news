@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base target="_blank">
-  <title>Atomic News: Tech & AI Daily — Wednesday, March 25, 2026</title>
+  <title>Atomic News: Tech & AI Daily — March 25, 2026</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
     h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
@@ -59,14 +59,89 @@
 
   <p class="brand">Atomic News</p>
   <div class="title-row">
-    <h1>☀️ Tech & AI Daily — Wednesday, March 25, 2026</h1>
+    <h1>☀️ Tech & AI Daily — March 25, 2026</h1>
     <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
   </div>
 
-  <!-- Podcast Player Placeholder -->
+  <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🚨 <strong>LiteLLM Compromised on PyPI</strong></h3>
+    <p>New versions (1.82.7 and 1.82.8) of the popular LLM proxy library LiteLLM were found to contain malicious base64-encoded blobs that trigger forkbomb-style resource exhaustion. If you use LiteLLM in your stack, pin to 1.82.6 immediately and audit your environments.</p>
+    <p class="meta"><a href="https://github.com/BerriAI/litellm/issues/24512">GitHub</a> • Mar 24</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Apple Business Launches</strong></h3>
+    <p>Apple has introduced "Apple Business," a new all-in-one platform for businesses of all sizes. It appears to be a direct move to capture more enterprise seat-time by bundling device management, support, and business-critical apps into a single unified subscription.</p>
+    <p class="meta"><a href="https://www.apple.com/newsroom/2026/03/introducing-apple-business-a-new-all-in-one-platform-for-businesses-of-all-sizes/">Apple Newsroom</a> • Mar 24</p>
+  </div>
+
+  <div class="item">
+    <h3>🧬 <strong>Arm AGI CPU: Silicon for the Agent Era</strong></h3>
+    <p>Arm has officially announced its "AGI CPU" architecture, specifically designed to handle the heavy branching and low-latency requirements of agentic AI. 📌 This is a major signal that the hardware industry is moving beyond just "matrix math" (NPU/GPU) and into "logic acceleration" for autonomous agents.</p>
+    <p class="meta"><a href="https://newsroom.arm.com/blog/introducing-arm-agi-cpu">Arm Blog</a> • Mar 24</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🍷 <strong>Wine 11 Kernel Rewrite</strong></h3>
+    <p>Massive speed gains for running Windows games and apps on Linux via a new kernel-level rewrite.</p>
+    <p class="meta"><a href="https://www.xda-developers.com/wine-11-rewrites-linux-runs-windows-games-speed-gains/">XDA Developers</a> • Mar 24</p>
+  </div>
+
+  <div class="item">
+    <h3>⚡ <strong>Nanobrew</strong></h3>
+    <p>A lightning-fast, C++ based macOS package manager that remains fully compatible with existing Homebrew formulae.</p>
+    <p class="meta"><a href="https://nanobrew.trilok.ai/">Trilok AI</a> • Mar 24</p>
+  </div>
+
+  <div class="item">
+    <h3>📺 <strong>Video.js Rebooted</strong></h3>
+    <p>The maintainer took back the project after 16 years, rewriting it to be 88% smaller (v10 Beta).</p>
+    <p class="meta"><a href="https://videojs.org/blog/videojs-v10-beta-hello-world-again">Video.js</a> • Mar 24</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3><strong>GigaChat 3.1 Ultra & Lightning</strong></h3>
+    <p>Sber's new open weights models. Ultra (702B MoE) rivals Qwen3 and DeepSeek V3, while Lightning (10B) is built for local edge inference.</p>
+    <p class="meta"><a href="https://huggingface.co/collections/ai-sage/gigachat-31">Hugging Face</a> • Mar 24</p>
+  </div>
+
+  <div class="item">
+    <h3><strong>last30days-skill</strong></h3>
+    <p>An AI agent skill that researches topics across Reddit, X, YT, and HN to synthesize grounded summaries.</p>
+    <p class="meta"><a href="https://github.com/mvanhorn/last30days-skill">GitHub</a> • Mar 24</p>
+  </div>
+
+  <div class="item">
+    <h3><strong>hermes-agent</strong></h3>
+    <p>A new agentic framework from Nous Research designed to "grow with you" through persistent memory.</p>
+    <p class="meta"><a href="https://github.com/NousResearch/hermes-agent">GitHub</a> • Mar 24</p>
+  </div>
+
+  <div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
 
   <footer>
-    <p><em>Sources: Hacker News, Reddit (ML/LocalLLaMA), X/Twitter, GitHub Trending</em></p>
+    <p><em>Sources: Hacker News, Reddit, GitHub Trending, Web Search</em></p>
     <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
   </footer>
 
