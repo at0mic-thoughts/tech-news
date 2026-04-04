@@ -1,225 +1,207 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech & AI Daily | Saturday, April 4, 2026</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background: #fafafa;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 12px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-        .header .date {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-top: 10px;
-        }
-        .section {
-            background: white;
-            margin: 30px 0;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        .section h2 {
-            color: #2c3e50;
-            margin: 0 0 25px 0;
-            font-size: 1.8rem;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .story {
-            margin: 25px 0;
-            padding: 20px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .story:last-child {
-            border-bottom: none;
-        }
-        .story-title {
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .story-content {
-            margin-bottom: 10px;
-            color: #555;
-        }
-        .story-meta {
-            font-size: 0.9rem;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        .divider {
-            text-align: center;
-            margin: 40px 0;
-            color: #bdc3c7;
-            font-size: 1.5rem;
-        }
-        .deep-dive {
-            background: #f8f9fa;
-            border-left: 4px solid #e74c3c;
-        }
-        .tool-highlight {
-            background: #f0f8ff;
-            border-left: 4px solid #3498db;
-        }
-        .priority-alert {
-            background: #fff5f5;
-            border-left: 4px solid #e53e3e;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            background: #34495e;
-            color: white;
-            border-radius: 12px;
-            font-style: italic;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .stack-impact {
-            background: #fff8e1;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 6px;
-            border-left: 3px solid #ff9800;
-            font-weight: 600;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Atomic News: Tech & AI Daily — April 4, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <h1>☀️ Tech & AI Daily</h1>
-        <div class="date">Saturday, April 4, 2026</div>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Atomic News</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily — April 4, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none;">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-04APR26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-04APR26.mp3" download>⬇ Download MP3</a>
     </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
 
-    <div class="section priority-alert">
-        <h2>⚡ Must Know</h2>
-        
-        <div class="story">
-            <div class="story-title">🚨 Axios NPM package compromised in supply chain attack</div>
-            <div class="story-content">A critical vulnerability was found in the popular `axios` library, a cornerstone of the JavaScript ecosystem. Post-mortem is ongoing. This is a massive deal: update your packages immediately and audit all systems that depend on it. The NPM ecosystem remains fragile.</div>
-            <div class="story-meta"><a href="https://github.com/axios/axios/issues/10636">GitHub</a> • Apr 3</div>
-            <div class="stack-impact">📌 Direct impact on our stack</div>
-        </div>
+  <div class="item">
+    <h3>🔴 <strong>OpenClaw privilege escalation vulnerability disclosed</strong></h3>
+    <p>CVE-2026-33579 published in NVD. No details yet on severity or affected versions. This matters because it's your primary agent infrastructure. Check for patches immediately and audit any production deployments.</p>
+    <p class="meta"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33579">NVD</a></p>
+  </div>
 
-        <div class="story">
-            <div class="story-title">🧠 Anthropic finds "emotion concepts" that steer Claude's behavior</div>
-            <div class="story-content">New research shows how patterns for things like “desperation” or “calm” light up inside Claude and change how it codes and answers. This isn't just vibes: they've found internal emotion concepts that actually steer model behavior. A big step in interpretability.</div>
-            <div class="story-meta"><a href="https://www.anthropic.com/research/emotion-concepts-function">Anthropic</a> • Apr 4</div>
-             <div class="stack-impact">📌 Affects our Anthropic usage</div>
-        </div>
-        
-        <div class="story">
-            <div class="story-title">📉 Delve removed from Y Combinator</div>
-            <div class="story-content">The company has been removed from the YC directory. No official reason given, but this usually signals a major issue or pivot. A reminder of how volatile the startup landscape is, even for the chosen ones.</div>
-            <div class="story-meta"><a href="https://www.ycombinator.com/companies/delve">Y Combinator</a> • Apr 4</div>
-        </div>
+  <div class="item">
+    <h3>📁 <strong>Mintlify ditches RAG for virtual filesystem</strong></h3>
+    <p>Smart architectural shift. Instead of chunking docs and hoping retrieval works, they built a filesystem AI can navigate like code. This matters because RAG is fundamentally broken for complex documentation. Expect this pattern to spread fast.</p>
+    <p class="meta"><a href="https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant">Mintlify</a></p>
+  </div>
 
-        <div class="story">
-            <div class="story-title">⚖️ EFF: FAA drone restriction is an attempt to criminalize filming ICE</div>
-            <div class="story-content">The FAA’s temporary flight restriction is being called a blatant attempt to stop journalists and citizens from documenting ICE activities. High score on HN shows the tech community is watching this clash between surveillance and accountability closely.</div>
-            <div class="story-meta"><a href="https://www.eff.org/deeplinks/2026/04/faas-temporary-flight-restriction-drones-blatant-attempt-criminalize-filming-ice">EFF</a> • Apr 3</div>
-        </div>
+  <div class="item">
+    <h3>💸 <strong>Claude gets usage credit boost for Pro/Max/Team plans</strong></h3>
+    <p>Anthropic celebrating their usage bundles launch with bonus credits. Timing suggests they're confident in adoption. Good news if you're on these tiers.</p>
+    <p class="meta"><a href="https://support.claude.com/en/articles/14246053-extra-usage-credit-for-pro-max-and-team-plans">Claude Support</a></p>
+  </div>
 
-        <div class="story">
-            <div class="story-title">📈 Gold overtakes U.S. Treasuries as largest foreign reserve asset</div>
-            <div class="story-content">A major shift in the global financial landscape. Central banks are diversifying away from the dollar. This matters for anyone in crypto, as it validates the thesis that trust in traditional fiat systems is eroding.</div>
-            <div class="story-meta"><a href="https://economictimes.indiatimes.com/news/international/us/gold-overtakes-u-s-treasuries-as-the-worlds-largest-foreign-reserve-asset-in-2026-can-gold-challenge-the-u-s-dollars-dominance-and-hold-its-ground/articleshow/126420128.cms?from=mdr">Economic Times</a> • Apr 4</div>
-        </div>
-    </div>
+  <div class="item">
+    <h3>📝 <strong>Personal blog frontpage hits 623 HN points</strong></h3>
+    <p>Clean aggregator for indie blogs. Nice escape from algorithmic feeds and a return to human curation. The indie web renaissance continues.</p>
+    <p class="meta"><a href="https://text.blogosphere.app/">Hacker News</a></p>
+  </div>
 
-    <div class="divider">━━━━━━━━━━━━━━━━━━━━</div>
+  <div class="item">
+    <h3>💼 <strong>Oracle files H-1B petitions amid mass layoffs</strong></h3>
+    <p>Classic corporate move: lay off current staff, file for visa workers. Score of 309 suggests developer community is not amused. Nothing new, but worth noting the continued tech labor market weirdness.</p>
+    <p class="meta"><a href="https://nationaltoday.com/us/tx/austin/news/2026/04/03/oracle-files-thousands-of-h-1b-visa-petitions-amid-mass-layoffs/">National Today</a></p>
+  </div>
 
-    <div class="section">
-        <h2>📡 Worth Knowing</h2>
-        
-        <div class="story">
-            <div class="story-title">🐧 Run Linux containers on Android without root:</div>
-            <div class="story-content">Podroid makes it possible.</div>
-            <div class="story-meta"><a href="https://github.com/ExTV/Podroid">Hacker News</a> • Apr 3</div>
-        </div>
+  <hr class="section-divider">
 
-        <div class="story">
-            <div class="story-title">✈️ AI-powered travel hacking toolkit:</div>
-            <div class="story-content">points search and trip planning for award travel.</div>
-            <div class="story-meta"><a href="https://github.com/borski/travel-hacking-toolkit">Hacker News</a> • Apr 4</div>
-        </div>
+  <h2>📡 Worth Knowing</h2>
 
-        <div class="story">
-            <div class="story-title">🚀 Go on Embedded Systems and WebAssembly:</div>
-            <div class="story-content">TinyGo continues to be the best way to do it.</div>
-            <div class="story-meta"><a href="https://tinygo.org/">Hacker News</a> • Apr 3</div>
-        </div>
+  <div class="item">
+    <h3>🔐 <strong>SSH certificates guide:</strong></h3>
+    <p>better enterprise authentication than traditional keys, properly explained.</p>
+    <p class="meta"><a href="https://jpmens.net/2026/04/03/ssh-certificates-the-better-ssh-experience/">jpmens.net</a></p>
+  </div>
 
-        <div class="story">
-            <div class="story-title">🌍 Artemis II crew captures spectacular Earth image:</div>
-            <div class="story-content">a new perspective from the moon mission.</div>
-            <div class="story-meta"><a href="https://www.bbc.com/news/articles/ce8jzr423p9o">BBC</a> • Apr 3</div>
-        </div>
+  <div class="item">
+    <h3>🤖 <strong>Ollama + Gemma 4 26B setup:</strong></h3>
+    <p>complete Mac mini walkthrough for local AI deployment.</p>
+    <p class="meta"><a href="https://gist.github.com/greenstevester/fc49b4e60a4fef9effc79066c1033ae5">Hacker News</a></p>
+  </div>
 
-        <div class="story">
-            <div class="story-title">✍️ Why are we still using Markdown?:</div>
-            <div class="story-content">a deep dive into the pros and cons of the ubiquitous format.</div>
-            <div class="story-meta"><a href="https://bgslabs.org/blog/why-are-we-using-markdown/">Hacker News</a> • Apr 3</div>
-        </div>
-    </div>
+  <div class="item">
+    <h3>☁️ <strong>Iran strikes hit AWS zones:</strong></h3>
+    <p>Bahrain and Dubai availability zones hard down after strikes.</p>
+    <p class="meta"><a href="https://www.bigtechnology.com/p/iran-strikes-leave-amazon-availability">Big Technology</a></p>
+  </div>
 
-    <div class="divider">━━━━━━━━━━━━━━━━━━━━</div>
+  <div class="item">
+    <h3>🔧 <strong>TinyOS for Cortex-M:</strong></h3>
+    <p>minimalist RTOS in C, clean embedded systems approach.</p>
+    <p class="meta"><a href="https://github.com/cmc-labo/tinyos-rtos">Hacker News</a></p>
+  </div>
 
-    <div class="section deep-dive">
-        <h2>🔍 Deep Dive: The NPM House of Cards</h2>
-        <div class="story-content">
-            <p>The Axios supply chain compromise is another brutal reminder of how fragile the NPM ecosystem is. Axios is not some obscure dependency: it's used in millions of projects, from weekend hacks to critical enterprise systems. One compromised package can have devastating downstream effects.</p>
-            <p>This isn't the first time, and it won't be the last. The reliance on a vast, interconnected web of thousands of tiny packages creates an enormous attack surface. While tools like `npm audit` help, they are reactive. The core problem is architectural: a culture of pulling in dependencies for trivial tasks creates systemic risk.</p>
-            <p>This matters because the convenience of NPM has come at the cost of security and resilience. It's time for developers to be more deliberate about their dependencies, vendor critical packages, and consider alternatives like Deno or Bun that are rethinking package management security from the ground up.</p>
-            <p><strong>📌 Why it matters for us:</strong> We use Axios. We need to audit all projects, update to a patched version immediately, and review our dependency policies.
-            </p>
-        </div>
-    </div>
-    
-    <div class="divider">━━━━━━━━━━━━━━━━━━━━</div>
+  <div class="item">
+    <h3>🎨 <strong>Grok Imagine improvements:</strong></h3>
+    <p>X/Twitter reports better results when using LLM to refine prompts iteratively.</p>
+    <p class="meta"><a href="#">Source</a></p>
+  </div>
 
-    <div class="section tool-highlight">
-        <h2>🔧 Repo/Tool of the Day</h2>
-        
-        <div class="story">
-            <div class="story-title">Travel Hacking Toolkit</div>
-            <div class="story-content">An open-source toolkit using AI to find the best award travel deals and plan trips using your points. A practical application of AI for a real-world problem.</div>
-            <div class="story-meta"><a href="https://github.com/borski/travel-hacking-toolkit">GitHub</a> • Apr 4</div>
-        </div>
-    </div>
+  <hr class="section-divider">
 
-    <div class="footer">
-        Sources: Hacker News, GitHub, Anthropic, Y Combinator, EFF, Economic Times, BBC
-    </div>
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3><strong>Blog Frontpage</strong></h3>
+    <p>Aggregates personal blogs without algorithmic manipulation. Simple, clean, human-curated discovery. The antithesis of social media feeds and a return to what the web used to be good at.</p>
+    <p class="meta"><a href="https://text.blogosphere.app/">text.blogosphere.app</a></p>
+  </div>
+
+
+  <div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, Reddit (ML/LocalLLaMA), X/Twitter, GitHub Trending</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
 </body>
 </html>
-```
