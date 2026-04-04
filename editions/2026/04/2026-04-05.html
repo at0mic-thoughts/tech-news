@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Sunday, April 5, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Sunday, April 5, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-05APR26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-05APR26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🔍 <strong>Claude Code Found 23-Year-Old Linux Vulnerability</strong></h3>
+    <p>📌 Claude Code discovered a buffer overflow vulnerability that's been hiding in Linux kernel for over two decades. This validates AI-powered code auditing as a legitimate security tool and shows what our own agent ecosystem could catch.</p>
+    <p class="meta"><a href="https://mtlynch.io/claude-code-found-linux-vulnerability/">Mitchell Lynch</a> • Apr 3</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Apple Approves Nvidia eGPU Driver for Arm Macs</strong></h3>
+    <p>First official Nvidia external GPU support on Apple Silicon after years of lockout. This could finally make high-end ML development viable on Macs without cloud dependency.</p>
+    <p class="meta"><a href="https://www.theverge.com/tech/907003/apple-approves-driver-that-lets-nvidia-egpus-work-with-arm-macs">The Verge</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>💥 <strong>Iranian Missiles Take Down AWS Data Centers in Gulf</strong></h3>
+    <p>Multiple AWS availability zones in Bahrain and Dubai declared &quot;hard down&quot; after missile strikes. Reminder that cloud infrastructure isn't immune to geopolitical chaos.</p>
+    <p class="meta"><a href="https://www.tomshardware.com/tech-industry/iranian-missile-blitz-takes-down-aws-data-centers-in-bahrain-and-dubai-amazon-declares-hard-down-status-for-multiple-zones">Tom's Hardware</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>🤐 <strong>Meta Bans Author From Criticizing Company</strong></h3>
+    <p>Author of &quot;Careless People&quot; legally prohibited from saying anything negative about Meta as part of settlement. Corporate censorship getting increasingly brazen.</p>
+    <p class="meta"><a href="https://www.thetimes.com/uk/technology-uk/article/sarah-wynn-williams-careless-people-meta-nrffdfpmf">The Times</a> • Apr 4</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🧠 <strong>Simple Self-Distillation Boosts Code Generation</strong></h3>
+    <p>Arxiv paper shows &quot;embarrassingly simple&quot; technique improving coding model performance. Sometimes the best AI advances are the ones that make you go &quot;why didn't we try this earlier?&quot;</p>
+    <p class="meta"><a href="https://arxiv.org/abs/2604.01193">Arxiv</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>🤖 <strong>Components of a Coding Agent Breakdown</strong></h3>
+    <p>Sebastian Raschka's practical analysis of what makes coding agents work. 📌 Essential reading for anyone building agent systems like we are with OpenClaw.</p>
+    <p class="meta"><a href="https://magazine.sebastianraschka.com/p/components-of-a-coding-agent">Sebastian Raschka</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>😮 <strong>Anthropic Research on Emotion Concepts in LLMs</strong></h3>
+    <p>📌 New research from Anthropic on how emotion concepts function inside large language models. Relevant for understanding Claude's behavior patterns in our daily workflows.</p>
+    <p class="meta"><a href="https://www.anthropic.com/research/emotion-concepts-function">Anthropic</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>🤔 <strong>Microsoft's Copilot Naming Disaster</strong></h3>
+    <p>Analysis of how many different products Microsoft calls &quot;Copilot&quot; and why this confuses everyone. Classic example of how not to do product branding in the AI era.</p>
+    <p class="meta"><a href="https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html">Tey Bannerman</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>🌍 <strong>Artemis II Crew Captures Spectacular Earth Image</strong></h3>
+    <p>Stunning photography from lunar mission capturing Earth from deep space. Sometimes it's worth remembering there's a world beyond our screens and terminals.</p>
+    <p class="meta"><a href="https://www.bbc.com/news/articles/ce8jzr423p9o">BBC</a> • Apr 3</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🎮 <strong>Interactive GPU Building Game</strong></h3>
+    <p>Educational browser game where you build a GPU from scratch and learn how graphics processing actually works. Surprisingly deep for something this accessible.</p>
+    <p class="meta"><a href="https://jaso1024.com/mvidia/">Show HN</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>⚡ <strong>TurboQuant-WASM: Vector Quantization in Browser</strong></h3>
+    <p>Google's vector quantization algorithms compiled to WebAssembly for client-side processing. Useful for anyone building search or embedding systems without server dependencies.</p>
+    <p class="meta"><a href="https://github.com/teamchong/turboquant-wasm">GitHub</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>💰 <strong>SLLM: Split GPU Nodes with Other Developers</strong></h3>
+    <p>Service for sharing expensive GPU compute with unlimited tokens. Smart approach to making high-end AI development accessible without breaking the bank.</p>
+    <p class="meta"><a href="https://sllm.cloud">Show HN</a> • Apr 4</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Mitchell Lynch, The Verge, Tom's Hardware, The Times, Arxiv, Sebastian Raschka, Anthropic, Tey Bannerman, BBC, Show HN, GitHub</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
