@@ -63,40 +63,34 @@
     <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
   </div>
 
-  <div class="podcast-player" style="display: block">
+  <div class="podcast-player" style="display: none">
     <h3>🎙️ Today's Podcast</h3>
     <audio controls preload="metadata">
-      <source src="https://news.at0mic.com/editions/2026/04/at0mic-news-0405.mp3" type="audio/mpeg">
+      <source src="at0mic-news-05APR26.mp3" type="audio/mpeg">
     </audio>
     <div class="podcast-meta">
-      <a href="https://news.at0mic.com/editions/2026/04/at0mic-news-0405.mp3" download>⬇ Download MP3</a>
+      <a href="at0mic-news-05APR26.mp3" download>⬇ Download MP3</a>
     </div>
   </div>
   
     <h2>⚡ Must Know</h2>
 
   <div class="item">
-    <h3>🔴 <strong>Someone at BrowserStack Is Leaking Users' Email Addresses</strong></h3>
-    <p>Tracking pixels in transactional emails appear to be forwarding customer addresses to third parties, confirmed by multiple affected users. If you have a BrowserStack account, audit what email you registered with and check whether it has surfaced in unexpected places.</p>
-    <p class="meta"><a href="https://shkspr.mobi/blog/2026/04/someone-at-browserstack-is-leaking-users-email-address/">Hacker News</a> • Apr 5</p>
+    <h3>🧠 <strong>The Threat Is Comfortable Drift Toward Not Understanding</strong></h3>
+    <p>A high-scoring HN essay arguing the real danger of AI-assisted coding is not replacement but slow competency decay, where you stop understanding your own systems without noticing. Required reading if you are shipping anything with a copilot right now.</p>
+    <p class="meta"><a href="https://ergosphere.blog/posts/the-machines-are-fine/">Hacker News</a> • Apr 5</p>
   </div>
 
   <div class="item">
-    <h3>🤖 <strong>GPT-5.5 'Spud' Pretraining Done, Launch Looks Imminent</strong></h3>
-    <p>Leaked reports circulating on X say OpenAI wrapped pretraining on 'Spud' around March 24, with Altman calling it 'a very strong model' and Brockman claiming two years of research inside it. Take leaks with salt, but the framing suggests this is not a minor point release.</p>
-    <p class="meta"><a href="https://t.co/pwOZCQ9GZL">X</a> • Apr 5</p>
+    <h3>🔒 <strong>German eIDAS Wallet Requires Apple or Google Account to Function</strong></h3>
+    <p>Germany's national digital ID under eIDAS turns out to require an Apple or Google account on mobile, which is a spectacular own goal for EU digital sovereignty. Your government credentials running on US Big Tech infrastructure is not the independence Brussels was pitching.</p>
+    <p class="meta"><a href="https://bmi.usercontent.opencode.de/eudi-wallet/wallet-development-documentation-public/latest/architecture-concept/06-mobile-devices/02-mdvm/">Hacker News</a> • Apr 4</p>
   </div>
 
   <div class="item">
-    <h3>🧠 <strong>Entropy-Budgeted Inference Cuts LLM Hallucinations Without Touching Model Weights</strong></h3>
-    <p>EBI uses lightweight forward hooks to monitor per-layer activation entropy and keeps it inside a defined corridor at inference time, reducing hallucinations with zero retraining required. Architecture-agnostic and early results look genuinely interesting rather than vaporware.</p>
-    <p class="meta"><a href="https://t.co/BK0A6Tskm3">X</a> • Apr 5</p>
-  </div>
-
-  <div class="item">
-    <h3>⚡ <strong>Google Drops Gemini 3.1 Flash-Lite and Flash Live</strong></h3>
-    <p>Flash-Lite is pitched as Google's fastest and cheapest model yet, while Flash Live adds real-time streaming capabilities. The inference cost race keeps accelerating and speed alone is no longer a differentiator for anyone building on top of these APIs.</p>
-    <p class="meta"><a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/">Google Blog</a> • Apr 1</p>
+    <h3>🤦 <strong>How Many Products Does Microsoft Have Named Copilot?</strong></h3>
+    <p>Someone counted and the answer is genuinely absurd, a sign of strategic incoherence from a company trying to AI-brand everything simultaneously. This is less a product strategy and more a branding panic attack that is starting to alienate the developers they need.</p>
+    <p class="meta"><a href="https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html">Hacker News</a> • Apr 4</p>
   </div>
 
   <hr class="section-divider">
@@ -104,27 +98,39 @@
   <h2>📡 Worth Knowing</h2>
 
   <div class="item">
-    <h3>🛠️ <strong>LLMs Hallucinate APIs Because Their Training Data Is Already Stale</strong></h3>
-    <p>A thread making the rounds hammers the point that LLMs generate code against outdated API versions and the inconsistency is worse because every model has a different knowledge cutoff. The practical fix is to inject current docs into context rather than trusting the model to know.</p>
-    <p class="meta"><a href="https://t.co/Hw0d0ZBjn6">X</a> • Apr 5</p>
+    <h3>📌 <strong>ClawSafety: Frontier Models Fail 40-75% of Agent Safety Tests in the Wild</strong></h3>
+    <p>New paper shows LLMs that pass standard safety benchmarks still get successfully attacked 40 to 75 percent of the time once given real agent tools and an adversarial prompt. This is the exact threat model for any agentic framework and benchmark green lights clearly do not transfer to autonomous tool use.</p>
+    <p class="meta"><a href="https://t.co/8X3Cczktm8">X/Twitter</a> • Apr 5</p>
   </div>
 
   <div class="item">
-    <h3>🔲 <strong>Aegis: Open-Source FPGA Silicon Hits GitHub</strong></h3>
-    <p>MidstallSoftware released Aegis, an open-source FPGA silicon project aiming to give the hardware community a fully auditable chip platform. Still early stage, but open silicon is a slow-burn movement worth tracking if you care about supply chain trust.</p>
-    <p class="meta"><a href="https://github.com/MidstallSoftware/aegis">Hacker News</a> • Apr 5</p>
+    <h3>📝 <strong>Karpathy's LLM Wiki: A Model for Maintaining an Idea File</strong></h3>
+    <p>Karpathy dropped a public gist showing his structured idea file for tracking LLM developments, essentially an external memory system for staying current in a field that moves faster than anyone can absorb. Steal this pattern immediately if you are not already running something similar.</p>
+    <p class="meta"><a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">Hacker News</a> • Apr 4</p>
   </div>
 
   <div class="item">
-    <h3>🍎 <strong>M5 Max Power Mode Makes a Huge Difference for Local LLM Inference</strong></h3>
-    <p>Benchmarks show the M5 Max draws around 140W in High Power mode versus only 30W in Low Power, with LLM inference throughput to match. If you are running local models on Apple Silicon, always plug in and flip to High Power before you start a session.</p>
-    <p class="meta"><a href="https://t.co/Szq8DoHljP">X</a> • Apr 5</p>
+    <h3>☁️ <strong>My Google Workspace Account Suspension</strong></h3>
+    <p>A detailed account of a Google Workspace account getting suspended overnight with zero recourse, taking down email, Drive, and every connected service in one shot. Single-vendor lock-in is a business continuity risk and this is a textbook case for why you keep local copies of everything.</p>
+    <p class="meta"><a href="https://zencapital.substack.com/p/sad-story-of-my-google-workspace">Hacker News</a> • Apr 5</p>
   </div>
 
   <div class="item">
-    <h3>🔌 <strong>Zero-Power Open-Source PCB Hackathon Badges</strong></h3>
-    <p>Kai Pereira released fully open hardware hackathon badges that require no power to display content, with schematics and firmware on GitHub. A clean piece of maker craft and a reminder that clever hardware design beats brute-forcing it with a bigger battery.</p>
-    <p class="meta"><a href="https://github.com/KaiPereira/Overglade-Badges">Hacker News</a> • Apr 4</p>
+    <h3>🎮 <strong>Show HN: A Browser Game Where You Build a GPU</strong></h3>
+    <p>The highest-scoring HN post in this batch at 855 points, a browser game where you design and simulate your own GPU architecture. This is a legitimately good way to build GPU intuition without a PhD or a $40k server rack.</p>
+    <p class="meta"><a href="https://jaso1024.com/mvidia/">Hacker News</a> • Apr 4</p>
+  </div>
+
+  <div class="item">
+    <h3>⚒️ <strong>Eight Years of Wanting, Three Months of Building with AI</strong></h3>
+    <p>A developer chronicles finally shipping a tool in three months with AI assistance that had been sitting in their head for eight years. Honest and grounded take on where AI actually accelerates versus where deep domain knowledge still gates progress.</p>
+    <p class="meta"><a href="https://lalitm.com/post/building-syntaqlite-ai/">Hacker News</a> • Apr 5</p>
+  </div>
+
+  <div class="item">
+    <h3>🦀 <strong>Lisette: A Rust-Inspired Language That Compiles to Go</strong></h3>
+    <p>Lisette takes Rust-style syntax and semantics and compiles down to Go, aiming to blend Rust's expressiveness with Go's deployment simplicity and ecosystem reach. Too early to bet on it but a genuinely interesting experiment at the intersection of two languages builders already care about.</p>
+    <p class="meta"><a href="https://lisette.run/">Hacker News</a> • Apr 5</p>
   </div>
 
   <hr class="section-divider">
@@ -132,15 +138,9 @@
   <h2>🔧 Repo/Tool of the Day</h2>
 
   <div class="item">
-    <h3>📊 <strong>zml-smi: One Tool to Monitor GPUs, TPUs, and NPUs</strong></h3>
-    <p>zml-smi is basically nvidia-smi but hardware-agnostic, giving you a single unified view across GPU, TPU, and NPU backends. Essential if you are running mixed accelerator setups or experimenting with non-NVIDIA hardware and tired of juggling vendor-specific CLIs.</p>
-    <p class="meta"><a href="https://zml.ai/posts/zml-smi/">ZML</a> • Mar 31</p>
-  </div>
-
-  <div class="item">
-    <h3>🗿 <strong>Caveman: Translate Any Text Into Caveman Speak</strong></h3>
-    <p>A tiny open-source CLI sitting at the top of Hacker News with 257 points that does exactly one thing: makes your text sound like a caveman wrote it. Completely useless, absolutely delightful, and the HN comment thread is worth the trip.</p>
-    <p class="meta"><a href="https://github.com/JuliusBrussee/caveman">Hacker News</a> • Apr 5</p>
+    <h3>🎬 <strong>OpenScreen: Open-Source Alternative to Screen Studio</strong></h3>
+    <p>OpenScreen is a free, open-source macOS screen recorder gunning for Screen Studio, with solid GitHub traction since launch. If you are paying a subscription for screen recording or just want local-first video without cloud dependency, this is the obvious thing to try first.</p>
+    <p class="meta"><a href="https://github.com/siddharthvaddem/openscreen">Hacker News</a> • Apr 1</p>
   </div>
 
 
@@ -158,7 +158,7 @@
   </div>
 
   <footer>
-    <p><em>Sources: Hacker News, X, Google Blog, ZML</em></p>
+    <p><em>Sources: Hacker News, X/Twitter</em></p>
     <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
   </footer>
 
