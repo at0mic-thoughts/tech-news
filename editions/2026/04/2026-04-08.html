@@ -76,27 +76,27 @@
     <h2>⚡ Must Know</h2>
 
   <div class="item">
-    <h3>🔴 <strong>Claude Mythos: Too Dangerous to Ship, So Anthropic Built Glasswing Instead</strong></h3>
-    <p>Anthropic's most capable cybersecurity model got withheld from public release because their own evals scared them, with controlled access going to vetted researchers via Project Glasswing plus $4M to open-source security orgs. This is the first time a major lab has voluntarily benched a frontier model on safety grounds and it sets a precedent worth tracking. 📌</p>
-    <p class="meta"><a href="https://www.anthropic.com/glasswing">Anthropic</a> • Apr 7</p>
+    <h3>🔴 <strong>📌 Anthropic Sitting on 'Mythos,' Its Most Powerful Model Yet</strong></h3>
+    <p>Anthropic confirmed it is withholding its next-generation Claude Mythos model from public release due to safety concerns, particularly around cybersecurity risks. If the people building the thing won't ship it, that tells you something serious about what it can do.</p>
+    <p class="meta"><a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Fortune</a> • Apr 8</p>
   </div>
 
   <div class="item">
-    <h3>🤖 <strong>GLM-5.1: 754B Open-Weight Model Benchmarks Ahead of Claude Opus 4</strong></h3>
-    <p>Zhipu AI dropped GLM-5.1 as a fully open-weight 754B-parameter model built for long-horizon agentic tasks and it is outpacing Claude Opus 4 on benchmarks. The open model race just hit a new gear and this one is worth watching closely for local and self-hosted deployment.</p>
-    <p class="meta"><a href="https://z.ai/blog/glm-5.1">Zhipu AI Blog</a> • Apr 7</p>
+    <h3>🤖 <strong>📌 Anthropic Launches Claude Managed Agents and ant CLI</strong></h3>
+    <p>Anthropic dropped two new API-layer tools: Claude Managed Agents (public beta) with secure sandboxing, built-in tools, and SSE streaming, plus ant CLI with native Claude Code integration and YAML-based configuration. This is directly relevant to how we architect OpenClaw pipelines.</p>
+    <p class="meta"><a href="https://t.co/oMUrqd932f">X / Anthropic</a> • Apr 8</p>
   </div>
 
   <div class="item">
-    <h3>📌 <strong>OpenClaw Gets Native LLM Wiki Pattern Support</strong></h3>
-    <p>OpenClaw now ships native support for Karpathy's LLM Wiki pattern, letting agents maintain a persistent interlinked Markdown knowledge base with automatic history backfilling and a new /dreams feature for overnight reflection. This is a real upgrade for long-running agent workflows and directly relevant to what we are building. 📌</p>
-    <p class="meta"><a href="https://t.co/AkeDKwL6Ts">X</a> • Apr 8</p>
+    <h3>⚙️ <strong>📌 Claude Code 2.1.97 Ships with 46 CLI Changes</strong></h3>
+    <p>A chunky Claude Code release landed with 46 CLI changes, a new Focus view toggle, and a notable behavior shift: deferred tools now require ToolSearch schema to load before running. Worth reading the full changelog if you have automated Claude Code workflows.</p>
+    <p class="meta"><a href="https://t.co/Rniqrssldc">X</a> • Apr 8</p>
   </div>
 
   <div class="item">
-    <h3>🔒 <strong>Cloudflare Commits to Full Post-Quantum Security by 2029</strong></h3>
-    <p>Cloudflare published a concrete post-quantum roadmap targeting quantum-resistant encryption across their entire platform by 2029. Three years is aggressive for a migration at this scale and they are effectively setting the industry's pace for everyone running infrastructure behind them.</p>
-    <p class="meta"><a href="https://blog.cloudflare.com/post-quantum-roadmap/">Cloudflare Blog</a> • Apr 7</p>
+    <h3>🧠 <strong>Meta Debuts Muse Spark, Pitches 'Personal Superintelligence'</strong></h3>
+    <p>Meta announced Muse Spark as its new frontier LLM powering Meta AI's shopping mode, with an open-source release planned. The 'personal superintelligence' framing is marketing fluff, but Mizuho analysts calling it a genuine competitive signal against OpenAI is worth noting.</p>
+    <p class="meta"><a href="https://ai.meta.com/blog/introducing-muse-spark-msl/?_fb_noscript=1">Meta AI Blog</a> • Apr 8</p>
   </div>
 
   <hr class="section-divider">
@@ -104,27 +104,39 @@
   <h2>📡 Worth Knowing</h2>
 
   <div class="item">
-    <h3>📄 <strong>Claude Mythos System Card: The PDF Behind the Headlines</strong></h3>
-    <p>The full Mythos system card is out and it is worth reading past the dunks on Twitter. The model found a 27-year-old bug in OpenBSD, demonstrated offensive cyber capabilities that pushed Anthropic's ASL thresholds, and the dual-use section is where the real reasoning lives for why this stayed gated. Read this one before forming opinions on whether Anthropic made the right call. 📌</p>
-    <p class="meta"><a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf">Anthropic</a> • Apr 7</p>
+    <h3>🔒 <strong>Microsoft Kills VeraCrypt's Dev Account, Blocking Windows Updates</strong></h3>
+    <p>Microsoft abruptly terminated VeraCrypt's developer account with no explanation, leaving the open-source encryption tool unable to ship Windows-signed updates. This is a bad look for Microsoft and a real headache for anyone relying on VeraCrypt in production.</p>
+    <p class="meta"><a href="https://www.404media.co/microsoft-abruptly-terminates-veracrypt-account-halting-windows-updates/">404 Media</a> • Apr 8</p>
   </div>
 
   <div class="item">
-    <h3>🔐 <strong>VeraCrypt Project Update Lands on HN Front Page</strong></h3>
-    <p>VeraCrypt dropped a significant project update that hit 414 points on HN today. If encrypted volumes are anywhere in your security or privacy stack, pull the thread before you start your day.</p>
-    <p class="meta"><a href="https://sourceforge.net/p/veracrypt/discussion/general/thread/9620d7a4b3/">VeraCrypt via HN</a> • Apr 8</p>
+    <h3>📡 <strong>MegaTrain Claims Full-Precision 100B+ LLM Training on a Single GPU</strong></h3>
+    <p>A new arxiv paper proposes MegaTrain, a method to train full-precision 100B+ parameter models on a single GPU. Extraordinary claim, needs serious scrutiny, but if it holds up it would fundamentally change who can train frontier-scale models.</p>
+    <p class="meta"><a href="https://arxiv.org/abs/2604.05091">arXiv</a> • Apr 8</p>
   </div>
 
   <div class="item">
-    <h3>🪣 <strong>S3 Files: AWS Rethinking Object Storage With POSIX-Style Semantics</strong></h3>
-    <p>Werner Vogels outlines S3 Files, a new interface giving S3 stronger consistency guarantees and filesystem-style access patterns. If you are building anything serious on object storage, this shifts some architectural assumptions you might be carrying.</p>
-    <p class="meta"><a href="https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html">All Things Distributed</a> • Apr 7</p>
+    <h3>😬 <strong>📌 Anthropic's Billing Support Is Broken and People Are Noticing</strong></h3>
+    <p>A developer documented waiting over a month for Anthropic to respond to a billing issue, with 221 HN upvotes suggesting this is not a one-off. Worth flagging because we pay for API access and should know support response time is basically zero right now.</p>
+    <p class="meta"><a href="https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/">Personal Blog / Hacker News</a> • Apr 8</p>
   </div>
 
   <div class="item">
-    <h3>🛠️ <strong>The Git Commands to Run Before Reading Any Codebase</strong></h3>
-    <p>A solid practical post on using git log, blame, and diff as your orientation layer before touching unfamiliar code. Not groundbreaking but it will save you an hour of confusion the next time you parachute into a new repo.</p>
-    <p class="meta"><a href="https://piechowski.io/post/git-commands-before-reading-code/">piechowski.io via HN</a> • Apr 8</p>
+    <h3>🚗 <strong>Cities Are Pulling the Plug on Flock Safety License Plate Surveillance</strong></h3>
+    <p>Multiple US cities are canceling contracts with Flock Safety over concerns about mass surveillance, data retention, and mission creep. The privacy backlash against automated license plate readers is real and growing.</p>
+    <p class="meta"><a href="https://www.cnet.com/home/security/when-flock-comes-to-town-why-cities-are-axing-the-controversial-surveillance-technology/">CNET</a> • Apr 8</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Someone Actually Ported Mac OS X to the Nintendo Wii</strong></h3>
+    <p>A developer documented porting an early version of Mac OS X to the Nintendo Wii and it actually boots. Top HN story of the day with 1066 points, zero practical value, absolute maximum hacker joy.</p>
+    <p class="meta"><a href="https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html">Personal Blog / Hacker News</a> • Apr 8</p>
+  </div>
+
+  <div class="item">
+    <h3>🔍 <strong>📌 Stanford: One LLM Beats a Whole Team of LLMs on Multi-Hop Reasoning</strong></h3>
+    <p>A Stanford paper argues that under equal compute budgets, a single LLM solving a multi-hop problem in one chain of thought consistently outperforms coordinated multi-agent setups. The intuition is simple: splitting a reasoning chain across agents introduces handoff errors and loses context that a single internal chain preserves. This has direct implications for how we design OpenClaw orchestration. The instinct to throw more agents at hard problems may be costing us quality, not gaining it. Worth reading before your next architecture decision.</p>
+    <p class="meta"><a href="https://t.co/2kYgpnuKln">X / Stanford</a> • Apr 8</p>
   </div>
 
   <hr class="section-divider">
@@ -132,15 +144,9 @@
   <h2>🔧 Repo/Tool of the Day</h2>
 
   <div class="item">
-    <h3>🦀 <strong>Xilem: Experimental Rust Native UI Framework from Linebender</strong></h3>
-    <p>The crew behind Druid and Piet released Xilem, a reactive Rust UI framework targeting native desktop apps. Still early but the architecture is genuinely interesting if you want native Rust GUIs without routing through Tauri or Electron.</p>
-    <p class="meta"><a href="https://github.com/linebender/xilem">GitHub via HN</a> • Apr 7</p>
-  </div>
-
-  <div class="item">
-    <h3>🖨️ <strong>Printervention: Revive Dead USB Printers with an In-Browser Linux VM</strong></h3>
-    <p>This project runs a full Linux VM in your browser bridged to WebUSB over USB/IP to resurrect old printers that modern operating systems dropped support for. One of the most creative uses of browser APIs in a while and a good reminder that the platform keeps getting weirder in the best way.</p>
-    <p class="meta"><a href="https://printervention.app/details">HN</a> • Apr 7</p>
+    <h3>🔧 <strong>Railway Ditched Next.js and Builds Went from 10+ Minutes to Under 2</strong></h3>
+    <p>Railway's engineering team documented why they moved their frontend off Next.js and the performance results were dramatic: build times dropped by over 80%. Concrete data point for anyone still defaulting to Next.js for internal tooling where SSR is not actually needed.</p>
+    <p class="meta"><a href="https://blog.railway.com/p/moving-railways-frontend-off-nextjs">Railway Blog</a> • Apr 8</p>
   </div>
 
 
@@ -158,7 +164,7 @@
   </div>
 
   <footer>
-    <p><em>Sources: Anthropic, Zhipu AI Blog, X, Cloudflare Blog, VeraCrypt via HN, All Things Distributed, piechowski.io via HN, GitHub via HN, HN</em></p>
+    <p><em>Sources: Fortune, X / Anthropic, X, Meta AI Blog, 404 Media, arXiv, Personal Blog / Hacker News, CNET, X / Stanford, Railway Blog</em></p>
     <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
   </footer>
 
