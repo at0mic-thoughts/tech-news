@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Friday, April 10, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Friday, April 10, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-10APR26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-10APR26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>📌🤖 <strong>The MCP vs. Skills Debate Has a Clear Winner</strong></h3>
+    <p>A widely-read post argues MCP still beats skills-based tool integration for agent systems, and the HN thread (218 points) largely agrees. If you are building anything agentic, this is the current consensus on architecture worth internalizing.</p>
+    <p class="meta"><a href="https://david.coffee/i-still-prefer-mcp-over-skills/">Hacker News</a> • Apr 10</p>
+  </div>
+
+  <div class="item">
+    <h3>📌🔒 <strong>Anthropic Locks Claude Mythos Behind a 50-Company Firewall</strong></h3>
+    <p>Anthropic confirmed Claude Mythos but restricted access to a closed group of ~50 companies, while the same week Zhipu AI open-sourced a model that reportedly beats GPT-5.4 on coding benchmarks. The gap between what Anthropic ships publicly and what it keeps behind closed doors is widening fast.</p>
+    <p class="meta"><a href="https://whatllm.org/blog/new-ai-models-april-2026">WhatLLM</a> • Apr 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🐧 <strong>France Launches Official Government Linux Desktop Migration</strong></h3>
+    <p>The French government has formally kicked off a plan to migrate public sector desktops from Windows to Linux, framing it as digital sovereignty and reducing dependency on foreign (US) software. This is the most serious government-level Windows exit attempt in years and worth watching as a template.</p>
+    <p class="meta"><a href="https://www.numerique.gouv.fr/sinformer/espace-presse/souverainete-numerique-reduction-dependances-extra-europeennes/">Numerique.gouv.fr</a> • Apr 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🧠 <strong>Scientists Invented a Fake Disease. AI Said It Was Real.</strong></h3>
+    <p>Researchers made up a fictional medical condition and fed it to multiple AI systems, all of which confidently described symptoms, treatments, and cited plausible-sounding sources. This is not a gotcha experiment, it is a serious paper about how AI hallucination becomes misinformation at scale.</p>
+    <p class="meta"><a href="https://www.nature.com/articles/d41586-026-01100-y">Nature</a> • Apr 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🌿 <strong>GitButler Raises $17M to Build What Comes After Git</strong></h3>
+    <p>GitButler landed a Series A to continue rethinking version control from the ground up, moving past the mental model of commits and branches that has defined dev workflows since 2005. Ambitious framing, and the team has credibility, but 'what comes after Git' is a graveyard of failed projects.</p>
+    <p class="meta"><a href="https://blog.gitbutler.com/series-a">GitButler Blog</a> • Apr 10</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>⚛️ <strong>ETH Zurich Hits 99.91% Fidelity With 17,000-Qubit Array</strong></h3>
+    <p>ETH Zurich demonstrated a 17,000 qubit array operating at 99.91% fidelity, a significant jump in both scale and stability compared to prior benchmarks. Still pre-fault-tolerant, but the fidelity number is the one to watch as it approaches the threshold where quantum error correction becomes tractable.</p>
+    <p class="meta"><a href="https://ethz.ch/en/news-and-events/eth-news/news/2026/04/a-new-trick-brings-stability-to-quantum-operations.html">ETH Zurich</a> • Apr 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🚀 <strong>How NASA Built Artemis II's Fault-Tolerant Flight Computer</strong></h3>
+    <p>Deep technical writeup on the redundancy and fault-tolerance architecture behind the Artemis II flight computer, the kind of systems engineering that makes modern software engineers feel appropriately humbled. High signal read if you care about reliability and resilience patterns.</p>
+    <p class="meta"><a href="https://cacm.acm.org/news/how-nasa-built-artemis-iis-fault-tolerant-computer/">CACM</a> • Apr 9</p>
+  </div>
+
+  <div class="item">
+    <h3>💾 <strong>Old Laptops in a Colo as Low-Cost Servers</strong></h3>
+    <p>Someone is running a small fleet of repurposed consumer laptops in a colocation facility and documenting the whole setup, costs, and tradeoffs. Practically relevant for anyone self-hosting on a budget, and the built-in battery acts as free UPS which is a genuinely clever angle.</p>
+    <p class="meta"><a href="https://colaptop.pages.dev/">Hacker News</a> • Apr 9</p>
+  </div>
+
+  <div class="item">
+    <h3>⚡ <strong>Instant 1.0: A Backend Built for AI-Generated Apps</strong></h3>
+    <p>InstantDB hit 1.0 with an architecture writeup positioning it as the backend layer for apps being built by AI agents and code generators rather than humans typing. The framing is timely even if the tech is a Firebase-style realtime DB at its core.</p>
+    <p class="meta"><a href="https://www.instantdb.com/essays/architecture">Hacker News</a> • Apr 9</p>
+  </div>
+
+  <div class="item">
+    <h3>🔬 <strong>Hegel: A Universal Property-Based Testing Protocol</strong></h3>
+    <p>Hegel is a new cross-language property-based testing framework and protocol spec aiming to standardize PBT the way OpenAPI standardized REST description. Early days, but if it gets traction this could meaningfully improve how we write correctness tests across polyglot codebases.</p>
+    <p class="meta"><a href="https://hegel.dev">Hacker News</a> • Apr 9</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🔧 <strong>Charcuterie: Visual Unicode Similarity Explorer</strong></h3>
+    <p>A delightfully weird tool that maps Unicode characters by visual similarity, useful for catching homoglyph attacks, finding lookalike glyphs for design work, or just falling down a very satisfying rabbit hole. Bookmark this for the next time someone asks why their passwords are failing.</p>
+    <p class="meta"><a href="https://charcuterie.elastiq.ch/">Hacker News</a> • Apr 9</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, WhatLLM, Numerique.gouv.fr, Nature, GitButler Blog, ETH Zurich, CACM</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
