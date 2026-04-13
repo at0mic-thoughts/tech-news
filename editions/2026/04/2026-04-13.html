@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Monday, April 13, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Monday, April 13, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: block">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="https://pub-4fb12769d2be41c68782fb1357a4d935.r2.dev/tech-news/2026/04/at0mic-news-13APR26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="https://pub-4fb12769d2be41c68782fb1357a4d935.r2.dev/tech-news/2026/04/at0mic-news-13APR26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>📌⚠️ <strong>Anthropic Silently Cut Cache TTL in March, Devs Are Furious</strong></h3>
+    <p>Anthropic downgraded prompt cache TTL on March 6th with zero announcement, and the Claude Code issue thread hit 449 upvotes as developers realized it was a stealth price hike. If you run any agent pipeline or heavy Claude Code sessions with caching enabled, check your API costs right now because they may have quietly jumped.</p>
+    <p class="meta"><a href="https://github.com/anthropics/claude-code/issues/46829">Hacker News / GitHub</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>Anthropic Confirmed Claude Mythos But Locked It Behind a 50-Company Firewall</strong></h3>
+    <p>Anthropic's best model is real and it's not coming to you anytime soon. The same week they announced a 50-company pilot program for Mythos, Zhipu AI open-sourced a model that beats GPT-5.4 on coding, making the contrast between closed frontier labs and the open source community starker than ever.</p>
+    <p class="meta"><a href="https://whatllm.org/blog/new-ai-models-april-2026">WhatLLM</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>🌊 <strong>Eight Open-Weight AI Models Dropped in Seven Days: Gemma 4, Llama 4, Qwen 3.6 and More</strong></h3>
+    <p>Google, Meta, Alibaba, Mistral, OpenAI and Zhipu all shipped open-weight releases in a single week, and the landscape now has serious contenders at every tier. Open source is not playing catch-up anymore, it is setting the pace.</p>
+    <p class="meta"><a href="https://www.digitalapplied.com/blog/open-source-ai-landscape-april-2026-gemma-qwen-llama">Digital Applied</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>💸 <strong>One Dev Runs Multiple $10K MRR Businesses on a $20/Month Stack</strong></h3>
+    <p>Steve Hanov's post on staying lean is the highest-scoring HN story of the day at 793 points, and the thread is mostly people agreeing rather than disputing it. If you are adding infrastructure complexity before you have the revenue to justify it, this is the read that will make you feel bad about that.</p>
+    <p class="meta"><a href="https://stevehanov.ca/blog/how-i-run-multiple-10k-mrr-companies-on-a-20month-tech-stack">Hacker News</a> • Apr 12</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🎨 <strong>Bring Back Idiomatic Design</strong></h3>
+    <p>A well-argued essay on how cross-platform frameworks have sanded the personality out of software, making everything feel like the same gray app regardless of what platform you are on. Hits harder now that most AI coding tools default to producing identically bland UIs.</p>
+    <p class="meta"><a href="https://essays.johnloeber.com/p/4-bring-back-idiomatic-design">Hacker News</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>🇪🇺 <strong>Mistral Drops a Full European AI Sovereignty Playbook</strong></h3>
+    <p>Mistral published a strategic document framing European AI as a sovereignty play against US and Chinese model dominance, complete with policy recommendations. More interesting as a signal of where EU regulation and procurement are heading than as a technical doc.</p>
+    <p class="meta"><a href="https://europe.mistral.ai/">Hacker News</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>⚡ <strong>Seven Countries Now Run 100% Renewable Electricity</strong></h3>
+    <p>Iceland, Nepal, Bhutan and four others have fully crossed the renewable threshold, which is worth noting for anyone thinking about where to locate compute or how to frame sustainability claims. The story gets buried under AI news but the data point is real and significant.</p>
+    <p class="meta"><a href="https://www.the-independent.com/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html">The Independent</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>🏔️ <strong>The Closing of the Frontier</strong></h3>
+    <p>Tanya Verma makes a compelling case that AI has shifted from frontier expansion to consolidation, and the new challenge is reliability and deployment rather than capability. If you build on top of models rather than building models, this is the framing that will shape your next year.</p>
+    <p class="meta"><a href="https://tanyaverma.sh/2026/04/10/closing-of-the-frontier.html">Hacker News</a> • Apr 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🔥 <strong>The Peril of Laziness Lost: Bryan Cantrill on Why Effort Still Matters</strong></h3>
+    <p>Cantrill argues that the culture of intellectual laziness enabled by AI tools is eroding the deep engagement that produces real breakthroughs. Agree or not, it is one of the more honest takes on what we might be trading away for faster output.</p>
+    <p class="meta"><a href="https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/">Hacker News</a> • Apr 12</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>📌🔧 <strong>Claudraband: Claude Code for Power Users</strong></h3>
+    <p>A Show HN wrapper around Claude Code that adds custom keybindings, session management, and workflow shortcuts for people who live in the terminal. Directly relevant if you are heavy on Claude Code daily and want more control than the defaults give you.</p>
+    <p class="meta"><a href="https://github.com/halfwhey/claudraband">Hacker News</a> • Apr 12</p>
+  </div>
+
+  <div class="item">
+    <h3>🖥️ <strong>boringBar: A Taskbar-Style Dock Replacement for macOS</strong></h3>
+    <p>Moves your app launcher into a horizontal taskbar at the top of the screen instead of the Dock, which is exactly what a lot of Mac users coming from Windows or Linux have always wanted. Clean, minimal, and free to try.</p>
+    <p class="meta"><a href="https://boringbar.app/">Hacker News</a> • Apr 12</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News / GitHub, WhatLLM, Digital Applied, Hacker News, The Independent</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
