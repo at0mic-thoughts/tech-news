@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Wednesday, April 22, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Wednesday, April 22, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-22APR26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-22APR26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>📌 <strong>Anthropic Officially OKs OpenClaw-Style Claude CLI Usage</strong></h3>
+    <p>Anthropic updated its usage policy to explicitly permit OpenClaw-style CLI tooling, ending months of ambiguity that had the community on edge. This is a direct green light for our stack and removes any lingering policy risk from building on top of Claude via CLI.</p>
+    <p class="meta"><a href="https://docs.openclaw.ai/providers/anthropic">Hacker News</a> • Apr 21</p>
+  </div>
+
+  <div class="item">
+    <h3>🔐 <strong>Vercel Breach: OAuth Attack Exposes Platform Environment Variables</strong></h3>
+    <p>A supply chain attack via OAuth misconfiguration exposed environment variables across Vercel-hosted projects, per Trend Micro research. If anything you run lives on Vercel, audit your env vars and OAuth integrations right now because this is exactly the kind of quiet breach that burns people.</p>
+    <p class="meta"><a href="https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html">Trend Micro</a> • Apr 21</p>
+  </div>
+
+  <div class="item">
+    <h3>🚨 <strong>Anthropic Shelves Mythos Model After White House Cybersecurity Briefings</strong></h3>
+    <p>Anthropic built a model so capable at discovering and exploiting security vulnerabilities that they held it back from release and briefed the White House, Treasury, and the Fed. This is the first credible case of a frontier lab self-restricting a model for genuine national security risk, and it sets a precedent worth watching closely.</p>
+    <p class="meta"><a href="https://nationaltoday.com/us/dc/washington/news/2026/04/11/anthropic-restricts-release-of-powerful-ai-model-mythos/">National Today</a> • Apr 11</p>
+  </div>
+
+  <div class="item">
+    <h3>🇨🇳 <strong>DeepSeek V4 Dropping Late April, Any Day Now</strong></h3>
+    <p>DeepSeek's founder confirmed V4 targets late April, which at this point means it could land overnight. Given that R1 was a genuine benchmark earthquake, V4 is arguably the most consequential pending model release in the pipeline right now.</p>
+    <p class="meta"><a href="https://cntechpost.com/2026/04/10/chinese-ai-star-deepseek-targets-late-apr-v4-model-release/">CN Tech Post</a> • Apr 10</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>💻 <strong>Framework Laptop 13 Pro Is Here</strong></h3>
+    <p>Framework dropped the 13 Pro and the HN score of 380 tells you everything you need to know about how much builders care about repairable, upgradeable hardware. Worth a serious look if you are overdue for a refresh.</p>
+    <p class="meta"><a href="https://frame.work/laptop13pro">Framework</a> • Apr 21</p>
+  </div>
+
+  <div class="item">
+    <h3>👁️ <strong>Meta Logging Employee Mouse Movements and Keystrokes for AI Training</strong></h3>
+    <p>Meta is capturing granular employee activity data including mouse movements and keystrokes as raw AI training material, framed as an internal data flywheel strategy. Whether this stays internal or becomes a template for what they do with user data is the actual question.</p>
+    <p class="meta"><a href="https://economictimes.indiatimes.com/tech/technology/meta-to-start-capturing-employee-mouse-movements-keystrokes-for-ai-training-data/articleshow/130422612.cms?from=mdr">Economic Times</a> • Apr 21</p>
+  </div>
+
+  <div class="item">
+    <h3>🤖 <strong>Alibaba Launches Qwen 3.6 Plus for Agentic Enterprise Workflows</strong></h3>
+    <p>Qwen 3.6 Plus is optimized for multi-agent task automation and ships baked into Alibaba's Wukong enterprise platform. The open-weight Qwen series has been quietly punching above its weight class for months, so this is one to benchmark.</p>
+    <p class="meta"><a href="https://treasurytoday.com/press-releases/press-release-alibaba-unveils-qwen-3-6-plus-to-accelerate-agentic-ai-deployment-for-enterprises-and-alibabas-ai-applications/">Alibaba Press Release</a> • Apr 21</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Stratechery: Tim Cook's Impeccable Timing</strong></h3>
+    <p>Ben Thompson breaks down how Cook navigated the tariff turbulence and why Apple's current positioning is stronger than the surface headlines suggest. Worth reading if you track the macOS and Apple developer ecosystem for anything beyond stock price.</p>
+    <p class="meta"><a href="https://stratechery.com/2026/tim-cooks-impeccable-timing/">Stratechery</a> • Apr 21</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🔧 <strong>GoModel: Open-Source AI Gateway in Go</strong></h3>
+    <p>GoModel is a self-hostable AI gateway written in Go that handles routing across multiple LLM providers cleanly. If you want a lightweight alternative to cloud-managed API gateways for an agent stack, this is worth cloning and kicking the tyres.</p>
+    <p class="meta"><a href="https://github.com/ENTERPILOT/GOModel/">GitHub</a> • Apr 21</p>
+  </div>
+
+  <div class="item">
+    <h3>🗂️ <strong>Ctx: A /resume That Works Across Claude Code and Codex CLI</strong></h3>
+    <p>Ctx is a portable context file format that works as a session resume point for both Claude Code and OpenAI Codex CLI, saving you from re-explaining project state every cold start. Small utility, surprisingly useful for long-running agent sessions.</p>
+    <p class="meta"><a href="https://github.com/dchu917/ctx">GitHub</a> • Apr 20</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, Trend Micro, National Today, CN Tech Post, Framework, Economic Times, Alibaba Press Release, Stratechery, GitHub</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
