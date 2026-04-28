@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Wednesday, April 29, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Wednesday, April 29, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-29APR26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-29APR26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>📌🔴 <strong>Claude.ai Down, API Errors Hit Hard</strong></h3>
+    <p>Anthropic's API and Claude.ai both went dark for an extended stretch on April 28, taking down anyone building on the platform with it. If your agents or automations were broken yesterday, this is your incident report.</p>
+    <p class="meta"><a href="https://status.claude.com/incidents/9l93x2ht4s5w">Anthropic Status</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🔴 <strong>GitHub RCE Vulnerability CVE-2026-3854 Broken Down</strong></h3>
+    <p>A remote code execution flaw in GitHub itself could let attackers run arbitrary code on the platform. Wiz has the full technical breakdown and this one is worth reading before dismissing.</p>
+    <p class="meta"><a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854">Wiz</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🛡️ <strong>Bitwarden CLI Hijacked on npm, Credential Stealer Targets Devs and CI Pipelines</strong></h3>
+    <p>The official @bitwarden/cli npm package was compromised and repurposed into a credential stealer targeting developers, GitHub Actions, and AI tools. If Bitwarden CLI lives anywhere in your pipelines, audit it now.</p>
+    <p class="meta"><a href="https://www.stepsecurity.io/blog/bitwarden-cli-hijacked-on-npm-bun-staged-credential-stealer-targets-developers-github-actions-and-ai-tools">StepSecurity</a> • Apr 23</p>
+  </div>
+
+  <div class="item">
+    <h3>🤝 <strong>Google and Pentagon Strike Deal for 'Any Lawful' AI Use</strong></h3>
+    <p>Google has signed a broad AI partnership with the US military covering classified workloads, a full reversal from the Project Maven backlash years ago. Big Tech's pivot to defense is now complete and official.</p>
+    <p class="meta"><a href="https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal">The Verge</a> • Apr 28</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>💸 <strong>GitHub Copilot Code Review Will Start Eating Your Actions Minutes from June 1</strong></h3>
+    <p>GitHub is moving Copilot code review off its own budget and onto yours starting June 1. Not alarming for paid teams but a real gotcha if you are on a free or limited tier.</p>
+    <p class="meta"><a href="https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/">GitHub Changelog</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>📌⚖️ <strong>Who Owns the Code Claude Code Wrote?</strong></h3>
+    <p>A legal analysis digs into the unsettled question of copyright ownership for AI-generated code. No clean answers yet, but worth understanding before shipping Claude-written code into a commercial product.</p>
+    <p class="meta"><a href="https://legallayer.substack.com/p/who-owns-the-claude-code-wrote">Legal Layer</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>👻 <strong>Ghostty Terminal Is Leaving GitHub</strong></h3>
+    <p>The Ghostty dev is moving the project off GitHub over concerns about Microsoft's increasing control of open source infrastructure. A quiet but meaningful signal that the developer community is rethinking platform dependence.</p>
+    <p class="meta"><a href="https://mitchellh.com/writing/ghostty-leaving-github">Mitchell Hashimoto</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🤖 <strong>Ex-DeepMind AlphaGo Architect Raises Record $1.1B Seed Round for Superintelligence Startup</strong></h3>
+    <p>David Silver raised the largest seed round in history for Ineffable Intelligence, backed by Nvidia and Google. Chasing superintelligence with serious pedigree and a war chest to match.</p>
+    <p class="meta"><a href="https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html">CNBC</a> • Apr 27</p>
+  </div>
+
+  <div class="item">
+    <h3>📌📄 <strong>A Good AGENTS.md Is a Model Upgrade. A Bad One Is Worse Than Nothing.</strong></h3>
+    <p>Augment Code published a practical guide on writing effective AGENTS.md files for AI coding assistants. If you are building with agentic tools, a well-crafted AGENTS.md genuinely unlocks better behavior across the board.</p>
+    <p class="meta"><a href="https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files">Augment Code</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🏭 <strong>How ASML Became the Single Chokepoint for Cutting-Edge Chips</strong></h3>
+    <p>A long-form piece on the only company that can build the machines that build modern chips. Required reading to understand why chip export controls hit so hard and why there is no quick workaround for anyone cut off.</p>
+    <p class="meta"><a href="https://worksinprogress.co/issue/the-worlds-most-complex-machine/">Works in Progress</a> • Apr 25</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>📡 <strong>LocalSend: Open Source Cross-Platform AirDrop Alternative</strong></h3>
+    <p>No account, no cloud, works over your local network on Mac, Windows, Linux, iOS, and Android. If you have ever fought with AirDrop or Bluetooth file transfers, just install this.</p>
+    <p class="meta"><a href="https://github.com/localsend/localsend">GitHub</a> • Apr 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🔊 <strong>Microsoft VibeVoice: Open Source Frontier Voice AI</strong></h3>
+    <p>Microsoft dropped VibeVoice as a fully open source voice AI model and early reports put it in the same league as the best closed alternatives. Worth watching for anyone building voice interfaces or local speech pipelines.</p>
+    <p class="meta"><a href="https://github.com/microsoft/VibeVoice">GitHub / Microsoft</a> • Apr 28</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Anthropic Status, Wiz, StepSecurity, The Verge, GitHub Changelog, Legal Layer, Mitchell Hashimoto, CNBC, Augment Code, Works in Progress, GitHub, GitHub / Microsoft</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
