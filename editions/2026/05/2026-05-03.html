@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Sunday, May 3, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Sunday, May 3, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-03MAY26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-03MAY26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🤖 <strong>AI Hiring Tools Prefer AI-Written Resumes, Paper Finds</strong></h3>
+    <p>New empirical research shows AI-powered hiring systems systematically self-prefer AI-generated resumes over human-written ones, creating a feedback loop that could quietly lock humans out of the application process. This matters because agentic AI is already shaping who gets hired, not just how code gets written.</p>
+    <p class="meta"><a href="https://arxiv.org/abs/2509.00462">Arxiv</a> • May 2</p>
+  </div>
+
+  <div class="item">
+    <h3>📌🎨 <strong>Open Design: Use Your Coding Agent as a Design Engine</strong></h3>
+    <p>Open Design is a new open-source framework that lets coding agents generate and iterate on component-level UI designs programmatically, blurring the line between design and implementation. Worth watching closely if you are building any kind of agentic workflow that touches front-end output.</p>
+    <p class="meta"><a href="https://github.com/nexu-io/open-design">GitHub / Hacker News</a> • May 2</p>
+  </div>
+
+  <div class="item">
+    <h3>💰 <strong>AI Startups Pulled $242B in Q1 2026, 80% of All Global VC</strong></h3>
+    <p>Foundational AI startup funding doubled compared to all of 2025 in a single quarter, led by OpenAI, Anthropic, and xAI. Whether this is the most productive capital concentration in history or a bubble of historic proportions, the numbers demand attention.</p>
+    <p class="meta"><a href="https://seekingalpha.com/news/4575715-ai-startups-venture-funding-q1">Seeking Alpha / Crunchbase</a> • Apr 17</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>WSJ: America's Domestic Surveillance Apparatus Is Expanding Fast</strong></h3>
+    <p>The WSJ details how domestic surveillance infrastructure has grown well beyond post-9/11 norms, with new data streams and AI-assisted analysis being folded into government programs with minimal oversight. If you care about privacy or civil liberties, this is the piece to read this week.</p>
+    <p class="meta"><a href="https://www.wsj.com/articles/americas-expanding-domestic-surveillance-08b73187">WSJ</a> • May 2</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🎮 <strong>NetHack 5.0.0 Released After Years of Development</strong></h3>
+    <p>One of the oldest and most influential games in computing history just dropped a major version, and the changelog is substantial. If you have never played NetHack, this is your excuse.</p>
+    <p class="meta"><a href="https://nethack.org/v500/release.html">nethack.org</a> • May 2</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>How Fast Is a macOS VM, and How Small Can It Get?</strong></h3>
+    <p>A detailed benchmark of macOS VMs on Apple Silicon shows surprisingly capable performance at very small storage footprints, which is good news for anyone running dev environments or sandboxed testing on Mac. Practical numbers, not theoretical.</p>
+    <p class="meta"><a href="https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be/">Eclectic Light</a> • May 2</p>
+  </div>
+
+  <div class="item">
+    <h3>🚗 <strong>California Will Issue Traffic Tickets Directly to Driverless Cars</strong></h3>
+    <p>California is the first jurisdiction to formally ticket autonomous vehicles for traffic violations, which forces automakers to finally answer who pays when a robot runs a red light. The accountability gap for autonomous systems has been a free pass for too long.</p>
+    <p class="meta"><a href="https://www.bbc.com/news/articles/clypjx3rg2go">BBC</a> • May 2</p>
+  </div>
+
+  <div class="item">
+    <h3>🖤 <strong>Noctua Explains Why Releasing a Black Fan Takes Years</strong></h3>
+    <p>Noctua posted an extraordinarily detailed breakdown of why a simple color change can take years in hardware manufacturing, and it doubles as a masterclass in supply chain complexity hiding behind what looks like a trivial product decision. One of the better long reads this week.</p>
+    <p class="meta"><a href="https://www.noctua.at/en/expertise/blog/how-can-it-take-so-long-to-release-black-fan-versions">Noctua</a> • May 2</p>
+  </div>
+
+  <div class="item">
+    <h3>📌🏆 <strong>Best AI Models of 2026 So Far: Gemini 3.1 Pro Tops, Claude Opus 4.6 at No. 2</strong></h3>
+    <p>A current model roundup puts Gemini 3.1 Pro in the lead, with Claude Opus 4.6 and Claude Sonnet 4.6 at second and third ahead of GPT-5.3 Codex. Useful calibration for where the models we actually use sit in the competitive stack right now.</p>
+    <p class="meta"><a href="https://designforonline.com/the-best-ai-models-so-far-in-2026/">Design for Online</a> • May 2</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🐘 <strong>Barman: Battle-Tested Backup and Recovery for PostgreSQL</strong></h3>
+    <p>Barman from EnterpriseDB is the mature, production-grade answer to PostgreSQL backup and disaster recovery, handling streaming replication, point-in-time recovery, and multi-server setups. If you run Postgres without a proper backup strategy, stop what you are doing.</p>
+    <p class="meta"><a href="https://github.com/EnterpriseDB/barman">GitHub</a> • Apr 29</p>
+  </div>
+
+  <div class="item">
+    <h3>📌⚡ <strong>Flue: TypeScript Framework for Building Next-Gen Agents</strong></h3>
+    <p>Flue is a purpose-built TypeScript framework for agent development, aiming to give you proper abstractions for tool use, memory, and orchestration rather than duct-taping together existing libraries. Early days but directly relevant to anyone building agentic systems.</p>
+    <p class="meta"><a href="https://flueframework.com/">Hacker News</a> • May 2</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Arxiv, GitHub / Hacker News, Seeking Alpha / Crunchbase, WSJ, nethack.org, Eclectic Light, BBC, Noctua, Design for Online, GitHub, Hacker News</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
