@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Tuesday, May 12, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Tuesday, May 12, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-12MAY26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-12MAY26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🏠 <strong>Local AI Needs to Be the Norm</strong></h3>
+    <p>The most-upvoted HN post in recent memory makes the case that privacy, sovereignty, and reliability all point toward running AI locally rather than routing everything through cloud APIs. At 1702 points, this is the community speaking in unison, not a fringe take.</p>
+    <p class="meta"><a href="https://unix.foo/posts/local-ai-needs-to-be-norm/">Hacker News</a> • May 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>Obsidian Plugin Abused to Deploy Phantom Pulse RAT</strong></h3>
+    <p>A malicious community plugin was caught silently deploying a remote access trojan on victim machines. If you run Obsidian with community plugins enabled, audit your installed list right now, because this is exactly the kind of supply-chain attack that is hard to detect.</p>
+    <p class="meta"><a href="https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/">Hacker News</a> • May 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🐛 <strong>Mythos AI Finds a Real Vulnerability in Curl</strong></h3>
+    <p>An AI system called Mythos discovered a genuine, exploitable bug in curl, one of the most battle-hardened and audited pieces of software in existence. AI-assisted security research just cleared a significant credibility bar.</p>
+    <p class="meta"><a href="https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/">Hacker News</a> • May 11</p>
+  </div>
+
+  <div class="item">
+    <h3>📵 <strong>Gmail Now Requires QR Code Scan and SMS to Register</strong></h3>
+    <p>Google has added a mandatory QR code scan plus SMS step to new Gmail account creation, effectively killing off privacy-friendly or throwaway account setups. The friction is clearly by design, and it signals where Big Tech is heading on account identity requirements.</p>
+    <p class="meta"><a href="https://discuss.privacyguides.net/t/google-account-registration-now-requires-sending-an-sms-via-phone-instead-of-receiving-an-sms/36082">Hacker News</a> • May 11</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>✍️ <strong>I'm Going Back to Writing Code by Hand</strong></h3>
+    <p>An 861-upvote post argues that AI-generated code is fast to commit and painful to own, and that the hidden maintenance tax is quietly wrecking teams. Read this alongside James Shore's piece on AI coding agents and maintenance costs (below) because together they are making the same point from two directions: speed at generation time does not equal quality over time. The real question for agent builders like OpenClaw is how you design tasks so the output is something a human can actually reason about six months later.</p>
+    <p class="meta"><a href="https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/">Hacker News</a> • May 11</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Running Local Models on an M4 with 24GB Memory</strong></h3>
+    <p>Practical benchmarks and setup guide for getting serious local LLM inference out of an M4 Mac with 24GB unified RAM. Essential reading if you are on Apple Silicon and want to know what you can actually run without hitting swap.</p>
+    <p class="meta"><a href="https://jola.dev/posts/running-local-models-on-m4">Hacker News</a> • May 10</p>
+  </div>
+
+  <div class="item">
+    <h3>🤖 <strong>AI Coding Agents Should Be Judged on Maintenance Costs, Not Ship Speed</strong></h3>
+    <p>James Shore argues that the right metric for AI coding agents is not how fast they produce code but whether they reduce long-term maintenance burden, and most current agents fail that test badly. This framing is directly relevant to how you scope and evaluate OpenClaw tasks.</p>
+    <p class="meta"><a href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs">Hacker News</a> • May 10</p>
+  </div>
+
+  <div class="item">
+    <h3>👔 <strong>Software Engineering May No Longer Be a Lifetime Career</strong></h3>
+    <p>A sober, non-hysterical look at how AI is restructuring software labor markets and why the field may not support 30-year careers the way it once did. Worth reading for the realistic framing rather than the usual doomer or booster takes.</p>
+    <p class="meta"><a href="https://www.seangoedecke.com/software-engineering-may-no-longer-be-a-lifetime-career/">Hacker News</a> • May 11</p>
+  </div>
+
+  <div class="item">
+    <h3>⚙️ <strong>CUDA-oxide: Nvidia's Official Rust-to-CUDA Compiler</strong></h3>
+    <p>Nvidia has officially backed a Rust-to-CUDA compiler, meaning GPU programming without writing C++ is now a real, supported path rather than a community hack. Still early days but the official endorsement changes the calculus for anyone building GPU-accelerated tooling in Rust.</p>
+    <p class="meta"><a href="https://nvlabs.github.io/cuda-oxide/index.html">Hacker News</a> • May 11</p>
+  </div>
+
+  <div class="item">
+    <h3>⚖️ <strong>AI Note-Takers Are Making Lawyers Nervous</strong></h3>
+    <p>Law firms are getting spooked by AI meeting recorders sitting in on privileged conversations, and the attorney-client privilege waiver risk from third-party AI tools is a genuinely underexplored legal landmine. If you use Otter, Fireflies, or similar tools in any professional context, this is worth understanding.</p>
+    <p class="meta"><a href="https://www.nytimes.com/2026/05/09/business/dealbook/ai-notetakers-legal-risk.html">New York Times</a> • May 11</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🖥️ <strong>Ratty: A Terminal Emulator with Inline 3D Graphics</strong></h3>
+    <p>A terminal emulator that renders actual GPU-accelerated 3D graphics inline in the terminal. Completely impractical for daily use and absolutely worth bookmarking because it pushes the idea of what a terminal can even be.</p>
+    <p class="meta"><a href="https://ratty-term.org/">Hacker News</a> • May 11</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, New York Times</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
