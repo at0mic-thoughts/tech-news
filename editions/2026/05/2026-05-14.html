@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Thursday, May 14, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Thursday, May 14, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-14MAY26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-14MAY26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🌍 <strong>I Moved My Digital Stack to Europe</strong></h3>
+    <p>With 769 upvotes on HN, this detailed walkthrough of migrating away from AWS, Google, and US-based services to European alternatives is exactly what a lot of builders have been quietly looking for. This is the practical guide the digital sovereignty crowd needed.</p>
+    <p class="meta"><a href="https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/">Hacker News</a> • May 13</p>
+  </div>
+
+  <div class="item">
+    <h3>🐙 <strong>Leaving GitHub for Forgejo</strong></h3>
+    <p>Another developer publicly documents a full migration from GitHub to the open-source Forgejo platform, pulling 456 HN points and a thread full of people who have done or are planning the same thing. Microsoft's GitHub is quietly bleeding trust in open-source circles and this post captures why.</p>
+    <p class="meta"><a href="https://jorijn.com/en/blog/leaving-github-for-forgejo/">Hacker News</a> • May 13</p>
+  </div>
+
+  <div class="item">
+    <h3>💥 <strong>Twin Brothers Wipe 96 Government Databases Minutes After Being Fired</strong></h3>
+    <p>Two IT workers rage-deleted 96 government databases immediately after losing their jobs, which is an absolute case study in why offboarding procedures and least-privilege access actually matter. Funny until it is your org.</p>
+    <p class="meta"><a href="https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/">Ars Technica</a> • May 12</p>
+  </div>
+
+  <div class="item">
+    <h3>🔐 <strong>GitHub Actions Was Leaking GITHUB_TOKEN Values Into Workflow Logs</strong></h3>
+    <p>Composer (PHP's package manager) disclosed a security advisory showing GitHub Actions could expose GITHUB_TOKEN in workflow logs under certain conditions. If you run any Actions workflows touching Composer, audit your logs now.</p>
+    <p class="meta"><a href="https://github.com/composer/composer/security/advisories/GHSA-f9f8-rm49-7jv2">GitHub Security</a> • May 13</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>💳 <strong>Kickstarter Forced to Ban Adult Content by Payment Processors</strong></h3>
+    <p>Visa and Mastercard have claimed another platform, effectively forcing Kickstarter to ban adult content with zero democratic accountability. Payment processors remain the most powerful unelected regulators on the internet and nobody seems to want to fix that.</p>
+    <p class="meta"><a href="https://kotaku.com/kickstarter-is-the-latest-platform-seemingly-forced-to-ban-adult-content-by-payment-processors-2000695648">Kotaku</a> • May 13</p>
+  </div>
+
+  <div class="item">
+    <h3>✊ <strong>Open Source Resistance: Keep OSS Alive on Company Time</strong></h3>
+    <p>A new initiative pushing developers to carve out employer-paid time for open-source contributions. Idealistic on its own, but landing at exactly the moment when GitHub trust is eroding and developer burnout is a real conversation.</p>
+    <p class="meta"><a href="https://ossresistance.com/">Hacker News</a> • May 13</p>
+  </div>
+
+  <div class="item">
+    <h3>🎮 <strong>Linux Gaming Is Faster Because Windows APIs Are Becoming Linux Kernel Features</strong></h3>
+    <p>DXVK and Wine compatibility layers are now so mature that Windows API functionality is being absorbed directly into the Linux kernel itself. The irony of Microsoft's own APIs improving Linux gaming performance is peak 2026.</p>
+    <p class="meta"><a href="https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/">XDA Developers</a> • May 10</p>
+  </div>
+
+  <div class="item">
+    <h3>📊 <strong>Stanford 2026 AI Index: US Lead Over China Is Down to 2.7%</strong></h3>
+    <p>Stanford's annual AI Index is out and the headline number is stark: Anthropic's top model leads China's best by just 2.7%, down sharply from prior years. The US still wins on commercialization, but the gap is closing faster than most people assumed.</p>
+    <p class="meta"><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford HAI</a> • May 13</p>
+  </div>
+
+  <div class="item">
+    <h3>🌸 <strong>Haiku OS Is Trending Again and the Project Is More Alive Than You Think</strong></h3>
+    <p>The open-source BeOS-inspired Haiku OS is pulling serious HN attention, and the codebase is genuinely more active than most assume. Not a daily driver recommendation, but a beautifully engineered alternative worth knowing about if you care about OS design.</p>
+    <p class="meta"><a href="https://www.haiku-os.org">Hacker News</a> • May 13</p>
+  </div>
+
+  <div class="item">
+    <h3>🖥️ <strong>A History of IDEs at Google</strong></h3>
+    <p>Laurent Le Brun traces Google's internal tooling journey from Vi and Emacs debates through CitC, Cider, and large-scale editor infrastructure. The lessons about how developer tooling culture evolves at scale are genuinely worth the read for anyone building or thinking about dev tooling.</p>
+    <p class="meta"><a href="https://laurent.le-brun.eu/blog/a-history-of-ides-at-google">Hacker News</a> • May 9</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🐘 <strong>Ardent (YC P26): Postgres Sandboxes in Seconds With Zero Migrations</strong></h3>
+    <p>Ardent spins up fully isolated Postgres sandboxes on demand with no migration overhead, which is a real pain point for shared dev databases and slow CI schema setups. Worth a look if you have fought the shared-database-in-CI nightmare before.</p>
+    <p class="meta"><a href="https://www.tryardent.com/">Hacker News / YC</a> • May 13</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, Ars Technica, GitHub Security, Kotaku, XDA Developers, Stanford HAI, Hacker News / YC</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
