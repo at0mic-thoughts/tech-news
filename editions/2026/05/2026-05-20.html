@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Wednesday, May 20, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Wednesday, May 20, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-20MAY26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-20MAY26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>📌🤯 <strong>Karpathy Joins Anthropic</strong></h3>
+    <p>Andrej Karpathy announced he is joining Anthropic, which is about as significant a hiring signal as it gets in AI. The guy who built Tesla Autopilot and co-founded OpenAI picking Anthropic over every other lab says something loud about where the serious work is happening.</p>
+    <p class="meta"><a href="https://twitter.com/karpathy/status/2056753169888334312">Twitter / X</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>🔴 <strong>314 npm Packages Compromised in Supply Chain Attack</strong></h3>
+    <p>The Mini Shai-Hulud supply chain campaign is back, this time poisoning 314 npm packages with malicious payloads. If your project pulls from npm without lockfile hygiene or a software composition analysis step, today is the day to fix that.</p>
+    <p class="meta"><a href="https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/">SafeDep</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>🔑 <strong>CISA Admin Leaked Live AWS GovCloud Keys on GitHub</strong></h3>
+    <p>A CISA administrator accidentally pushed live AWS GovCloud credentials to a public GitHub repo, and Krebs has the receipts. The agency responsible for protecting government cloud infrastructure leaking its own keys is exactly as bad as it sounds.</p>
+    <p class="meta"><a href="https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/">Krebs on Security</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>✨ <strong>Google Drops Gemini 3.5 Flash and Gemini Omni at I/O</strong></h3>
+    <p>Google released both Gemini 3.5 Flash and Gemini Omni, with Flash targeting fast cheap inference and Omni going after native audio and video understanding. Gemini 3.5 Flash is the one to benchmark against Claude Haiku and GPT-4o mini if cost efficiency is your priority.</p>
+    <p class="meta"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google Blog</a> • May 19</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>📌🧠 <strong>Simon Willison: The Last 6 Months in LLMs in Five Minutes</strong></h3>
+    <p>Simon Willison's rapid-fire recap of the last six months in LLM development is required reading if you have been too busy building to track every announcement. Dense with useful signal, zero fluff, highly recommended before planning your next AI integration.</p>
+    <p class="meta"><a href="https://simonwillison.net/2026/May/19/5-minute-llms/">Simon Willison's Blog</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Apple Unveils Accessibility Features with Apple Intelligence Integration</strong></h3>
+    <p>Apple's latest accessibility push weaves Apple Intelligence throughout, covering live captions, eye-tracking control, and on-device AI assistance. Worth watching for where Apple is quietly shipping AI features without the hype cycle that follows every other lab.</p>
+    <p class="meta"><a href="https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/">Apple Newsroom</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>🐡 <strong>OpenBSD 7.9 Released</strong></h3>
+    <p>OpenBSD 7.9 is out with security hardening, driver improvements, and networking stack refinements. Not glamorous, but if you run any BSD infrastructure or care about the state of minimal secure OS design, this is your cue to update.</p>
+    <p class="meta"><a href="https://www.openbsd.org/79.html">OpenBSD</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>🕯️ <strong>Peter Neumann Has Died</strong></h3>
+    <p>Peter Neumann, the computer scientist behind SRI's provably secure PSOS and the long-running RISKS Digest, has died. His work on formally verified operating systems and his decades of cataloguing tech failures shaped how the whole community thinks about building trustworthy systems.</p>
+    <p class="meta"><a href="https://www.tuhs.org/pipermail/tuhs/2026-May/033748.html">TUHS Mailing List</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>📌🔬 <strong>KV Sharing, Multi-Head Compression, and Compressed Attention Explained</strong></h3>
+    <p>Sebastian Raschka's breakdown of recent LLM architecture improvements covers KV cache sharing, multi-head compression, and attention optimizations that are making inference faster and cheaper at scale. Directly relevant if you are thinking about local model deployment or keeping inference costs down for agent pipelines.</p>
+    <p class="meta"><a href="https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures">Sebastian Raschka / Substack</a> • May 19</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>📌🔧 <strong>Forge: Guardrails Take an 8B Model from 53% to 99% on Agentic Tasks</strong></h3>
+    <p>Forge is an open-source guardrails layer that jumped an 8B model from 53% to 99% accuracy on agentic benchmarks, which is a result worth taking seriously. If you are running smaller models in agent pipelines and hitting reliability walls, this constrained-output approach could save you from bumping up to a bigger model.</p>
+    <p class="meta"><a href="https://github.com/antoinezambelli/forge">GitHub</a> • May 19</p>
+  </div>
+
+  <div class="item">
+    <h3>🖥️ <strong>Virtual OS Museum: Almost Every OS Ever, Running in Your Browser</strong></h3>
+    <p>Someone built a browser-based museum with nearly every operating system in history running via emulation, and it actually works. Completely impractical and absolutely delightful, bookmark it for whenever you want to revisit Windows 3.1 or poke around BeOS.</p>
+    <p class="meta"><a href="https://virtualosmuseum.org/">Hacker News / virtualosmuseum.org</a> • May 19</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Twitter / X, SafeDep, Krebs on Security, Google Blog, Simon Willison's Blog, Apple Newsroom, OpenBSD, TUHS Mailing List, Sebastian Raschka / Substack, GitHub, Hacker News / virtualosmuseum.org</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
