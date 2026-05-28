@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Friday, May 29, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Friday, May 29, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-29MAY26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-29MAY26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🤖 <strong>📌 Claude Opus 4.8 Released</strong></h3>
+    <p>Anthropic shipped Opus 4.8 with meaningful gains on reasoning and coding benchmarks, continuing the rapid release cadence from the 4.x line. If you are building on Claude for OpenClaw, this is worth testing today.</p>
+    <p class="meta"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> • May 28</p>
+  </div>
+
+  <div class="item">
+    <h3>💰 <strong>📌 Anthropic Raises $65B Series H at ~$965B Valuation</strong></h3>
+    <p>Anthropic closed a monster $65B Series H, putting it just under a trillion dollar valuation and making it the most capitalized pure-play AI safety lab on the planet. This means more compute, faster model releases, and a longer runway to compete with OpenAI and Google.</p>
+    <p class="meta"><a href="https://www.anthropic.com/news/series-h">Anthropic</a> • May 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🎬 <strong>YouTube Will Auto-Label AI-Generated Videos</strong></h3>
+    <p>YouTube is moving from the honor system to automatic AI detection and labeling for generated content, which creators have largely ignored until now. This is the biggest platform-level AI transparency push yet and sets a precedent every major platform will feel pressure to follow.</p>
+    <p class="meta"><a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/">YouTube Blog</a> • May 27</p>
+  </div>
+
+  <div class="item">
+    <h3>⚙️ <strong>📌 Dynamic Workflows Land in Claude Code</strong></h3>
+    <p>Claude Code now supports dynamic workflows, letting agents adapt their execution paths based on runtime context rather than following rigid predefined scripts. This matters directly for agent orchestration patterns like OpenClaw uses, go read it.</p>
+    <p class="meta"><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Anthropic</a> • May 28</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🛒 <strong>EU Fines Temu €200M for Illegal Product Listings</strong></h3>
+    <p>The EU handed Temu a €200M fine under the Digital Services Act for hosting illegal products, marking one of the first major DSA enforcement actions against a Chinese marketplace. The EU is done warming up.</p>
+    <p class="meta"><a href="https://www.bbc.co.uk/news/articles/c1k2ydn1rz8o">BBC News</a> • May 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🐘 <strong>Just Use Postgres for Durable Workflows</strong></h3>
+    <p>DBOS makes the case that Postgres handles durable execution fine without Temporal or a dedicated workflow engine, and the argument is more compelling than it first sounds. A useful read if you are evaluating workflow infrastructure and tired of adding dependencies.</p>
+    <p class="meta"><a href="https://www.dbos.dev/blog/postgres-is-all-you-need-for-durable-execution">DBOS</a> • May 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🎮 <strong>Continue? Y/N: A Game About AI Agent Permission Fatigue</strong></h3>
+    <p>A 60-second browser game that perfectly skewers the UX hell of constant AI agent approval prompts, and it is funnier than it has any right to be. The fact it hit 158 points on HN means this pain point has reached critical mass in the dev community.</p>
+    <p class="meta"><a href="https://llmgame.scalex.dev">Hacker News</a> • May 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🍓 <strong>Raspberry Pi 6 and New Microcontroller News</strong></h3>
+    <p>Jeff Geerling has the early scoop on Raspberry Pi 6 and fresh microcontroller developments, good news for makers and self-hosters who have been waiting on more capable SBC hardware. Details are still thin but this is the most credible early look out there.</p>
+    <p class="meta"><a href="https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/">Jeff Geerling</a> • May 26</p>
+  </div>
+
+  <div class="item">
+    <h3>🕸️ <strong>Indoor Wi-Fi Roaming with OpenWRT</strong></h3>
+    <p>A solid practical guide to getting seamless indoor roaming working on OpenWRT, which remains one of the more frustrating parts of a self-hosted home network setup. Worth bookmarking if you are running OpenWRT and tired of your devices clinging to the wrong AP.</p>
+    <p class="meta"><a href="https://taoofmac.com/space/blog/2026/05/26/1730">Tao of Mac</a> • May 26</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🔧 <strong>bttf: Command Line Datetime Swiss Army Knife</strong></h3>
+    <p>BurntSushi dropped a new CLI tool for datetime parsing, conversion, and arithmetic that actually handles edge cases correctly, which is a low bar most tools fail. From the author of ripgrep, so expect it to be fast, well-documented, and reliable.</p>
+    <p class="meta"><a href="https://github.com/BurntSushi/bttf">GitHub</a> • May 28</p>
+  </div>
+
+  <div class="item">
+    <h3>🧠 <strong>📌 Ktx: Open-Source Executable Context Layer for Data Agents</strong></h3>
+    <p>Ktx provides a structured, executable context layer for LLM data agent pipelines, essentially a better way to manage what your agent knows and can do at runtime. Worth a look if you are building agent tooling and wrestling with context management.</p>
+    <p class="meta"><a href="https://github.com/Kaelio/ktx">GitHub</a> • May 28</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Anthropic, YouTube Blog, BBC News, DBOS, Hacker News, Jeff Geerling, Tao of Mac, GitHub</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
