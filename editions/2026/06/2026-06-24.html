@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Wednesday, June 24, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Wednesday, June 24, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-24JUN26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-24JUN26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🤯 <strong>VibeThinker 3B Beats Opus 4.5 on Reasoning</strong></h3>
+    <p>A 3B parameter model claims to beat Opus 4.5 on reasoning benchmarks using a novel SFT and GRPO training recipe. If the results hold under scrutiny, this is a serious signal that scale is not the only path to frontier-level reasoning. 📌</p>
+    <p class="meta"><a href="https://arxiv.org/abs/2606.16140">arXiv</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>What We Call Age Verification Is Actually Mass Surveillance</strong></h3>
+    <p>Cory Doctorow argues that age verification laws are architecturally identical to mass surveillance, requiring identity collection on every user just to gatekeep content. With Anthropic also updating their ToS to include age and identity verification this same week, the timing is uncomfortably pointed.</p>
+    <p class="meta"><a href="https://pluralistic.net/2026/06/23/destroy-the-village/">Pluralistic</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>🏷️ <strong>Anthropic Ships Claude Tag</strong></h3>
+    <p>Anthropic launched Claude Tag, a new product announced on their news page that picked up solid HN traction. Details are still thin, but any new Anthropic surface is worth watching if you are building on their API. 📌</p>
+    <p class="meta"><a href="https://www.anthropic.com/news/introducing-claude-tag">Anthropic</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>📄 <strong>Mistral OCR 4 Drops</strong></h3>
+    <p>Mistral releases OCR 4, their latest document parsing model, the same day Baidu drops Unlimited OCR on GitHub. The race to own structured document extraction is officially on and getting crowded fast.</p>
+    <p class="meta"><a href="https://mistral.ai/news/ocr-4/">Mistral</a> • Jun 23</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>👁️ <strong>MSG Compiled Dossiers on Facial Recognition Opponents</strong></h3>
+    <p>Madison Square Garden built detailed surveillance dossiers on privacy activists who publicly opposed their facial recognition system. This is what the chilling effect looks like in practice, and it should alarm anyone who thinks corporate biometrics are a benign convenience.</p>
+    <p class="meta"><a href="https://www.404media.co/madison-square-garden-made-dossier-on-activists-who-opposed-facial-recognition/">404 Media</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>📦 <strong>F3: A Proposal for the Future File Format</strong></h3>
+    <p>F3 hit a score of 481 on HN, which means the builder community is genuinely paying attention to this early proposal for a next-generation file format. Worth bookmarking as a signal of where thinking on long-term file interoperability is heading.</p>
+    <p class="meta"><a href="https://github.com/future-file-format/f3">GitHub</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>🔍 <strong>Baidu Open-Sources Unlimited OCR</strong></h3>
+    <p>Baidu drops Unlimited OCR, a one-shot long-horizon document parsing system for complex layouts, on the same day as Mistral OCR 4. If it works as advertised, it is a legitimate open-source option for document AI pipelines without a vendor dependency.</p>
+    <p class="meta"><a href="https://github.com/baidu/Unlimited-OCR">GitHub</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>⚠️ <strong>Claude Elevated Error Rate Across Multiple Models</strong></h3>
+    <p>Anthropic's status page logged elevated error rates across multiple Claude models on June 23. Operational heads-up for anyone running Claude-dependent workflows, and worth logging in your incident notes. 📌</p>
+    <p class="meta"><a href="https://status.claude.com/incidents/jbhf20wjmzrf">Anthropic Status</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>🍎 <strong>Swift Package Index Joins Apple</strong></h3>
+    <p>The community-run Swift Package Index, the de facto catalog for Swift packages, is officially becoming part of Apple. Good for discoverability and longevity, though community-run projects absorbed by the mothership rarely stay as nimble.</p>
+    <p class="meta"><a href="https://swiftpackageindex.com/blog/swift-package-index-joins-apple">Swift Package Index</a> • Jun 23</p>
+  </div>
+
+  <div class="item">
+    <h3>🔄 <strong>The Coming Loop: Armin Ronacher on the Agent Era</strong></h3>
+    <p>Armin Ronacher (Flask, Jinja) writes a sharp technical piece on the architectural shift as agentic loops become the default computing model. This is not hype writing; it is a working framework author thinking through what the loop-as-paradigm means for software design, and it maps directly onto what OpenClaw is navigating. 📌</p>
+    <p class="meta"><a href="https://lucumr.pocoo.org/2026/6/23/the-coming-loop/">Armin Ronacher</a> • Jun 23</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🎨 <strong>TikZ Editor: WYSIWYG Figures for LaTeX in the Browser</strong></h3>
+    <p>A browser-based visual editor for TikZ, the notoriously verbose LaTeX diagramming system. If you have ever spent 45 minutes nudging node coordinates to get an arrow pointing the right way, this is going to feel like cheating.</p>
+    <p class="meta"><a href="https://tikz.dev/editor/">tikz.dev</a> • Jun 23</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: arXiv, Pluralistic, Anthropic, Mistral, 404 Media, GitHub, Anthropic Status, Swift Package Index, Armin Ronacher, tikz.dev</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
