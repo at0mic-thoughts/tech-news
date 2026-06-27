@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Sunday, June 28, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Sunday, June 28, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-28JUN26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-28JUN26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>💀 <strong>Anonymous GitHub Account Mass-Dropping Undisclosed 0-Days</strong></h3>
+    <p>An anonymous account is publishing uncoordinated zero-day exploits with no CVE process, no vendor notification, and no responsible disclosure. If any of these hit software you run, you are finding out the hard way, so check the repo now.</p>
+    <p class="meta"><a href="https://github.com/bikini/exploitarium">Hacker News</a> • Jun 27</p>
+  </div>
+
+  <div class="item">
+    <h3>⚡ <strong>DSpark: DeepSeek Paper Significantly Accelerates LLM Inference</strong></h3>
+    <p>DeepSeek published DSpark, a speculative decoding technique that boosts LLM inference throughput in ways that matter for real production workloads. Faster inference cuts latency and API costs, which is the unsexy bottleneck deciding whether AI features are actually viable at scale.</p>
+    <p class="meta"><a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">Hacker News / DeepSeek</a> • Jun 27</p>
+  </div>
+
+  <div class="item">
+    <h3>🤖 <strong>June 2026 AI Model Releases Roundup: GPT-5.6 Sol and More</strong></h3>
+    <p>GPT-5.6 Sol landed on June 26 and June has seen a cluster of frontier model drops across labs. Worth checking benchmarks now if you are deciding which model to wire into your next project.</p>
+    <p class="meta"><a href="https://dev.to/vjswamy/latest-ai-model-releases-june-2026-roundup-49j5">DEV Community</a> • Jun 27</p>
+  </div>
+
+  <div class="item">
+    <h3>😤 <strong>Zuckerberg's Increasingly Bizarre War on Whistleblowers</strong></h3>
+    <p>Cory Doctorow breaks down Meta's escalating legal campaign against internal dissent, and it is getting genuinely aggressive. Read this because it tells you exactly where Meta's leadership mindset is right now.</p>
+    <p class="meta"><a href="https://pluralistic.net/2026/06/27/zuckerstreisand-2/">Pluralistic</a> • Jun 27</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🦾 <strong>AI Is Designing Radio Chips That Humans Couldn't Even Imagine</strong></h3>
+    <p>AI-generated chip topologies are outperforming human designs on radio hardware, and the designs look genuinely alien to engineers. This is concrete evidence of AI doing novel engineering work rather than just automating existing patterns.</p>
+    <p class="meta"><a href="https://spectrum.ieee.org/ai-radio-chip-design">IEEE Spectrum</a> • Jun 24</p>
+  </div>
+
+  <div class="item">
+    <h3>📢 <strong>Streaming Services' Obnoxiously Loud Ads Become Illegal July 1 in California</strong></h3>
+    <p>California bans ear-splitting streaming ads starting July 1, and this kind of state-level regulation tends to spread. Long overdue.</p>
+    <p class="meta"><a href="https://arstechnica.com/gadgets/2026/06/streaming-services-obnoxiously-loud-ads-become-illegal-on-july-1-in-california/">Ars Technica</a> • Jun 27</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>If You Can't Hold It, You Don't Own It</strong></h3>
+    <p>A sharp essay on the gulf between 'buying' digital content and actually owning it. Anyone building products with digital licenses should read this and think carefully about what they are actually promising users.</p>
+    <p class="meta"><a href="https://dervis.de/physical/">dervis.de</a> • Jun 27</p>
+  </div>
+
+  <div class="item">
+    <h3>📚 <strong>Fintech Engineering Handbook</strong></h3>
+    <p>An open, comprehensive reference covering payments, compliance patterns, and financial infrastructure engineering. Bookmark this if you are anywhere near financial data or building a crypto-adjacent project.</p>
+    <p class="meta"><a href="https://w.pitula.me/fintech-engineering-handbook/">Hacker News</a> • Jun 27</p>
+  </div>
+
+  <div class="item">
+    <h3>🐧 <strong>Linux on Older Hardware: The Complete Revival Guide</strong></h3>
+    <p>A thorough walkthrough of running modern Linux on aging machines, covering kernel tuning, lightweight desktop choices, and storage optimization. Solid reference for homelab builds or squeezing more years out of hardware without spending anything.</p>
+    <p class="meta"><a href="https://www.fosslinux.com/158206/linux-on-older-hardware-revival-guide.htm">FOSS Linux</a> • Jun 25</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🍺 <strong>Beer CSS: Material Design 3 in Record Time</strong></h3>
+    <p>Beer CSS implements Material Design 3 with minimal class overhead and zero JavaScript framework dependency. If you want something that looks polished without writing custom CSS from scratch, this is worth five minutes of your time.</p>
+    <p class="meta"><a href="https://www.beercss.com">Hacker News</a> • Jun 27</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, Hacker News / DeepSeek, DEV Community, Pluralistic, IEEE Spectrum, Ars Technica, dervis.de, FOSS Linux</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
