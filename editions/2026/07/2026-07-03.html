@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Friday, July 3, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Friday, July 3, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-03JUL26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-03JUL26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🚨 <strong>Android Developer Verification: Malware Masquerading as Protection</strong></h3>
+    <p>F-Droid's analysis reveals Google's Android Developer Verification system is being actively exploited as a malware vector, turning a supposed trust mechanism against the very users it claims to protect. If you sideload apps or run alternative app stores, this is essential reading right now.</p>
+    <p class="meta"><a href="https://f-droid.org/2026/07/01/adv-malware.html">F-Droid</a> • Jul 1</p>
+  </div>
+
+  <div class="item">
+    <h3>🔐 <strong>LUKS Suspend Stopped Wiping Encryption Keys from RAM Since Linux 6.9</strong></h3>
+    <p>A critical regression introduced in Linux 6.9 means LUKS suspend no longer wipes disk encryption keys from memory, making cold-boot attacks viable on any suspended machine running a recent kernel. If you have sensitive data on Linux hardware, treat this as urgent until a fix lands.</p>
+    <p class="meta"><a href="https://mathstodon.xyz/@iblech/116769502749142438">Mathstodon</a> • Jul 2</p>
+  </div>
+
+  <div class="item">
+    <h3>🤖 <strong>Kimi K2.7 Code Is Now Available in GitHub Copilot</strong></h3>
+    <p>Moonshot AI's Kimi K2.7 Code model landed in GitHub Copilot, giving developers yet another strong coding model inside their editor and signaling GitHub is serious about multi-model choice rather than vendor lock-in. The competition for default coding assistant is the most interesting horse race in dev tooling right now.</p>
+    <p class="meta"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/">GitHub Blog</a> • Jul 1</p>
+  </div>
+
+  <div class="item">
+    <h3>📌 <strong>Claude Sonnet 5 Released by Anthropic</strong></h3>
+    <p>Anthropic shipped Claude Sonnet 5 on June 30, the newest entry in the Sonnet line and directly relevant to our stack. Worth benchmarking against current agent workflows to see what changed before assuming the old model config is still optimal.</p>
+    <p class="meta"><a href="https://aireleasetracker.com/latest">AI Release Tracker</a> • Jun 30</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🇪🇸 <strong>Spain Orders Palantir Blacklisted from Public and Private Companies</strong></h3>
+    <p>Spain issued a sweeping order blocking Palantir across both public and private sector use, citing data sovereignty concerns in a move that goes far beyond typical EU compliance friction. This is the sharpest government action yet in the US-EU tech sovereignty standoff and sets a template others may follow.</p>
+    <p class="meta"><a href="https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv">Clash Report</a> • Jul 2</p>
+  </div>
+
+  <div class="item">
+    <h3>⚖️ <strong>AI Cannot Be Listed as Patent Inventor, Japan's Top Court Rules</strong></h3>
+    <p>Japan's Supreme Court joined the US and UK in ruling that AI cannot be named as a patent inventor, cementing a global legal consensus that AI is a tool rather than a creative agent for IP purposes. The frameworks are locking in before the technology stops being surprising, and that has long-term implications for AI-assisted R&amp;D.</p>
+    <p class="meta"><a href="https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/">Japan News</a> • Jul 2</p>
+  </div>
+
+  <div class="item">
+    <h3>🐳 <strong>Podman v6.0.0 Released</strong></h3>
+    <p>Podman hits v6.0 with significant changes to the container runtime stack, making this a meaningful upgrade for anyone using it as a Docker alternative for self-hosting. Check the migration notes carefully before upgrading anything in production.</p>
+    <p class="meta"><a href="https://blog.podman.io/2026/07/introducing-podman-v6-0-0/">Podman Blog</a> • Jul 2</p>
+  </div>
+
+  <div class="item">
+    <h3>📺 <strong>PeerTube Federated Video Platform Resurges on HN</strong></h3>
+    <p>PeerTube is picking up renewed attention as a self-hosted, ActivityPub-federated alternative to YouTube, with solid community momentum behind it. Worth bookmarking if decentralized video infrastructure is on your radar.</p>
+    <p class="meta"><a href="https://github.com/Chocobozzz/PeerTube">GitHub</a> • Jul 2</p>
+  </div>
+
+  <div class="item">
+    <h3>📌 <strong>Manufact (YC S25) Launches Managed MCP Cloud</strong></h3>
+    <p>Manufact is offering managed hosting for Model Context Protocol servers, removing the self-hosting overhead for MCP infrastructure in agent workflows. Directly relevant to OpenClaw, and worth watching as the MCP ecosystem shifts from DIY to productized services.</p>
+    <p class="meta"><a href="https://manufact.com">Hacker News</a> • Jul 2</p>
+  </div>
+
+  <div class="item">
+    <h3>🧠 <strong>One Transformer Layer Matches Full-Parameter RL Training</strong></h3>
+    <p>A new arxiv paper argues that a single transformer layer can match the performance of full-parameter RL training, which challenges foundational assumptions about model depth and efficiency. This sounds wrong until you read it carefully, and the efficiency implications for inference are significant if the result holds.</p>
+    <p class="meta"><a href="https://arxiv.org/abs/2607.01232">ArXiv</a> • Jul 2</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🔧 <strong>ZeroFS: Log-Structured Filesystem for S3</strong></h3>
+    <p>ZeroFS gives you a log-structured, POSIX-adjacent filesystem layered on top of S3 object storage, making cheap persistent storage viable without managing traditional disks. Early project but the architecture is worth understanding if you build data pipelines on object storage.</p>
+    <p class="meta"><a href="https://www.zerofs.net/">Hacker News</a> • Jul 2</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: F-Droid, Mathstodon, GitHub Blog, AI Release Tracker, Clash Report, Japan News, Podman Blog, GitHub, Hacker News, ArXiv</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
