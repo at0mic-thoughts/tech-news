@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Monday, July 6, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Monday, July 6, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-06JUL26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-06JUL26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🎨 <strong>Shadcn/UI Now Defaults to Base UI Instead of Radix</strong></h3>
+    <p>Shadcn is swapping its default headless layer from Radix to Base UI, a meaningful shift given how widely adopted shadcn is across the JS ecosystem. Check the changelog before your next upgrade because migration is not automatic.</p>
+    <p class="meta"><a href="https://ui.shadcn.com/docs/changelog">Hacker News</a> • Jul 5</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>Web-Based Cryptography Is Always Snake Oil</strong></h3>
+    <p>A sharp, well-argued piece explaining why doing cryptographic operations in the browser is fundamentally broken: the JS delivery mechanism undermines the very security guarantees crypto is supposed to provide. Required reading before you reach for the Web Crypto API on your next project.</p>
+    <p class="meta"><a href="https://www.devever.net/~hl/webcrypto">Hacker News</a> • Jul 5</p>
+  </div>
+
+  <div class="item">
+    <h3>📊 <strong>Stanford 2026 AI Index: Generative AI Worth $172B Annually to U.S. Consumers</strong></h3>
+    <p>Stanford HAI dropped their authoritative annual snapshot and the headline stat is that generative AI tools are now worth an estimated $172 billion per year to U.S. consumers alone, with median per-user value tripling since 2025. Bookmark this as your reference doc for the year.</p>
+    <p class="meta"><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford HAI</a> • Jul 5</p>
+  </div>
+
+  <div class="item">
+    <h3>🔍 <strong>Google Search Gets AI Agents at I/O 2026</strong></h3>
+    <p>Google is embedding agentic AI directly into Search, letting users trigger multi-step tasks just by typing a question. This is the biggest structural shift to how search works since featured snippets, and it puts real pressure on every standalone AI assistant product out there.</p>
+    <p class="meta"><a href="https://blog.google/products-and-platforms/products/search/search-io-2026/">Google Blog</a> • Jul 5</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🗺️ <strong>Organic Maps Hits 574 Upvotes on HN</strong></h3>
+    <p>The privacy-first, fully offline open-source maps app is having a serious moment, with a massive HN surge signaling real fatigue with Google Maps data collection. Works without an account, tracks nothing, syncs nothing.</p>
+    <p class="meta"><a href="https://organicmaps.app/">Hacker News</a> • Jul 5</p>
+  </div>
+
+  <div class="item">
+    <h3>🎓 <strong>AI Tutor Hits 0.71 to 1.30 SD Effect Size in Dartmouth Course</strong></h3>
+    <p>New research shows an AI tutor achieving effect sizes that rival one-on-one human tutoring, which has been the gold-standard benchmark in education research for decades. This result deserves far more attention than its low HN score suggests.</p>
+    <p class="meta"><a href="https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf">Hacker News</a> • Jul 5</p>
+  </div>
+
+  <div class="item">
+    <h3>🌐 <strong>Rayfish: Peer-to-Peer Mesh VPN With No Server to Trust</strong></h3>
+    <p>A new fully serverless mesh VPN that routes everything peer-to-peer with zero central coordination node, which is the key differentiator from Tailscale. Worth watching for anyone who wants Tailscale-style private networking without handing trust to a third party.</p>
+    <p class="meta"><a href="https://rayfish.xyz/blog/01-introducing-rayfish">Hacker News</a> • Jul 1</p>
+  </div>
+
+  <div class="item">
+    <h3>🐬 <strong>The Future of Flipper Zero Development</strong></h3>
+    <p>The Flipper team posted a candid roadmap update covering community forks, upcoming hardware directions, and long-term project sustainability. If you own one or follow the hardware hacking scene, read this before speculating about where the project is heading.</p>
+    <p class="meta"><a href="https://blog.flipper.net/future-of-flipper-zero-development/">Hacker News</a> • Jul 5</p>
+  </div>
+
+  <div class="item">
+    <h3>🏠 <strong>A Sociotechnical Threat Model for AI-Driven Smart Home Devices</strong></h3>
+    <p>An arxiv paper that builds a structured threat model for AI assistants in the home, covering data exfiltration, voice manipulation, and persistent surveillance vectors. The framing is practical and unusually grounded for academic security work, useful for anyone thinking about AI devices on a home network.</p>
+    <p class="meta"><a href="https://arxiv.org/abs/2602.09239">Arxiv</a> • Jul 5</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>📝 <strong>OpenWiki: CLI That Auto-Generates and Maintains Agent Documentation</strong></h3>
+    <p>LangChain released a CLI that analyzes your codebase and automatically writes and keeps agent documentation up to date. This is exactly the kind of tooling multi-agent projects need, and it is directly relevant to OpenClaw. Worth a test run today.</p>
+    <p class="meta"><a href="https://github.com/langchain-ai/openwiki">Hacker News</a> • Jul 1</p>
+  </div>
+
+  <div class="item">
+    <h3>🔧 <strong>KiCad in the Browser: Full PCB Design, No Install Required</strong></h3>
+    <p>Full KiCad PCB design running in-browser as a live demo, and it is impressively smooth for a tool this complex. Lowers the barrier to hardware prototyping significantly for anyone who has been put off by KiCad's install and setup.</p>
+    <p class="meta"><a href="https://demo.pcbjam.com/">Hacker News</a> • Jul 5</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Hacker News, Stanford HAI, Google Blog, Arxiv</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
