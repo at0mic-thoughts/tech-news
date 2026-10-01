@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Tech & AI Daily | Friday, October 2, 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
+    h1 { color: #58a6ff; font-size: 1.6rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .brand { color: #f0883e; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .title-row h1 { margin: 0; flex: 1; }
+    .coffee-button { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0; color: #f59e0b; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .coffee-button:hover { color: #fbbf24; text-decoration: none; }
+    h2 { color: #f0883e; font-size: 1.2rem; margin-top: 2rem; }
+    h3 { color: #8b949e; font-size: 1rem; margin-top: 1.5rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .item { margin-bottom: 1.5rem; }
+    .item strong { color: #e6edf3; }
+    .meta { color: #8b949e; font-size: 0.85rem; }
+    .section-divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+    footer { color: #484f58; font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid #30363d; padding-top: 1rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #8b949e; }
+    .podcast-player { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+    .podcast-player h3 { color: #58a6ff; margin: 0 0 0.75rem 0; font-size: 0.95rem; }
+    .podcast-player audio { width: 100%; margin-bottom: 0.75rem; }
+    .podcast-player .podcast-meta { display: flex; justify-content: flex-end; align-items: center; }
+    .podcast-player .podcast-meta a { background: #238636; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; text-decoration: none; }
+    .podcast-player .podcast-meta a:hover { background: #2ea043; }
+    .subscribe-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+    .subscribe-box h3 { color: #58a6ff; margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .subscribe-box p { color: #8b949e; margin: 0 0 1rem; font-size: 0.9rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .subscribe-form input[type="email"],
+    .subscribe-form input[type="text"] {
+      background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px;
+      border-radius: 6px; font-size: 0.9rem; flex: 1; min-width: 180px;
+    }
+    .subscribe-form input::placeholder { color: #484f58; }
+    .subscribe-form input:focus { border-color: #58a6ff; outline: none; }
+    .subscribe-form button {
+      background: #238636; color: #fff; border: none; padding: 8px 20px;
+      border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #2ea043; }
+    .subscribe-form button:disabled { background: #21262d; color: #484f58; cursor: not-allowed; }
+    .subscribe-msg { margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2em; }
+    .subscribe-msg.success { color: #3fb950; }
+    .subscribe-msg.error { color: #f85149; }
+    .subscribe-form input[name="name"] { max-width: 160px; }
+    .hp-field { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body>
+  <nav><a href="https://news.at0mic.com" target="_self">← All Editions</a></nav>
+
+  <p class="brand">Tech & AI Daily</p>
+  <div class="title-row">
+    <h1>☀️ Tech & AI Daily | Friday, October 2, 2026</h1>
+    <a class="coffee-button" href="https://ko-fi.com/at0micnews">☕ Buy me a coffee</a>
+  </div>
+
+  <div class="podcast-player" style="display: none">
+    <h3>🎙️ Today's Podcast</h3>
+    <audio controls preload="metadata">
+      <source src="at0mic-news-02OCT26.mp3" type="audio/mpeg">
+    </audio>
+    <div class="podcast-meta">
+      <a href="at0mic-news-02OCT26.mp3" download>⬇ Download MP3</a>
+    </div>
+  </div>
+  
+    <h2>⚡ Must Know</h2>
+
+  <div class="item">
+    <h3>🤖 <strong>Gemini 4 Argon</strong></h3>
+    <p>Google dropped Gemini 4 Argon and it landed with a HN score of 1623, making it the loudest model release in recent memory. This is clearly Google's most capable model yet and a direct challenge to whatever OpenAI has in the pipeline.</p>
+    <p class="meta"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google Blog</a> • Sep 30</p>
+  </div>
+
+  <div class="item">
+    <h3>⚡ <strong>Clef: Cloudflare Launches Open-Source Decision Models and RL Fine-Tuning Platform</strong></h3>
+    <p>Cloudflare is shipping open-source decision models alongside a new RL fine-tuning platform, which is a surprisingly aggressive push into the AI infra and agent tooling space. If you are building agentic workflows, lightweight deployable decision logic baked into edge infra is exactly the kind of primitive you want.</p>
+    <p class="meta"><a href="https://blog.cloudflare.com/clef-decision-models/">Cloudflare Blog</a> • Oct 1</p>
+  </div>
+
+  <div class="item">
+    <h3>⚖️ <strong>FTC Launches Formal Investigation into OpenAI, Anthropic Over Product Safety Risks</strong></h3>
+    <p>The FTC has opened formal probes into OpenAI, Anthropic, and other frontier AI labs over product safety concerns, which signals regulatory pressure is finally moving from headlines to actual process. This could meaningfully reshape how these companies ship and market their products.</p>
+    <p class="meta"><a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html">CNBC</a> • Sep 30</p>
+  </div>
+
+  <div class="item">
+    <h3>🔒 <strong>Figma Restricts MCP Access to Whitelisted Clients, Locks Out Pi</strong></h3>
+    <p>Figma quietly moved to a whitelist model for MCP access, explicitly blocking Pi and likely other third-party agent clients. Platform gatekeeping over MCP is a real fragmentation risk for anyone building tool-use agents that depend on design data.</p>
+    <p class="meta"><a href="https://twitter.com/GayaniFigma/status/2105295629941350454">X / Twitter</a> • Oct 1</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>📡 Worth Knowing</h2>
+
+  <div class="item">
+    <h3>🗄️ <strong>RIP, Vector Database</strong></h3>
+    <p>Turbopuffer argues the standalone vector database is becoming a commodity layer getting absorbed into general-purpose databases, and the case is pretty convincing. Worth reading before you commit to a dedicated vector store for your next project.</p>
+    <p class="meta"><a href="https://turbopuffer.com/blog/rip-vector-database">Turbopuffer</a> • Oct 1</p>
+  </div>
+
+  <div class="item">
+    <h3>🧠 <strong>Micron CEO Warns Memory Supply Will Be Much Tighter in 2027 and 2028</strong></h3>
+    <p>Micron's CEO is calling a significant HBM and DRAM supply crunch through 2027 and 2028, which will directly hit AI hardware costs and GPU availability. If you are planning any serious compute spend, factor in a nasty price environment ahead.</p>
+    <p class="meta"><a href="https://www.techpowerup.com/353296/micron-ceo-says-memory-supply-will-be-much-tighter-in-2027-and-2028-than-in-2026">TechPowerUp</a> • Oct 1</p>
+  </div>
+
+  <div class="item">
+    <h3>📱 <strong>Cops Can Bypass iPhone's Automatic Inactivity Reboot with GrayKey</strong></h3>
+    <p>Forensic tools like GrayKey can now circumvent the iOS inactivity reboot feature Apple introduced to protect locked devices, keeping phones in an exploitable before-first-unlock state. The security property a lot of people assumed existed no longer holds.</p>
+    <p class="meta"><a href="https://www.404media.co/cops-can-bypass-iphone-automatic-inactivity-reboot-graykey/">404 Media</a> • Oct 1</p>
+  </div>
+
+  <div class="item">
+    <h3>🔬 <strong>GPT-Synopsys: OpenAI Partners with Synopsys to Bring Frontier AI to Chip Design</strong></h3>
+    <p>OpenAI and Synopsys announced a joint effort to embed GPT-level intelligence into EDA workflows, which is one of the more credible applied-AI bets in hardware. AI-assisted chip design cuts iteration time and is where a lot of the next-generation silicon gains will come from.</p>
+    <p class="meta"><a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design">Synopsys</a> • Sep 30</p>
+  </div>
+
+  <div class="item">
+    <h3>🕵️ <strong>Identity Management for Agentic AI: OpenID Foundation Framework</strong></h3>
+    <p>The OpenID Foundation published a detailed framework for identity, delegation chains, and trust in multi-agent AI systems, covering how agents should authenticate and act on behalf of users across tool calls. This is the kind of foundational spec work that any serious agent orchestration platform will need to implement, and it is directly relevant to how OpenClaw handles identity across agent hops.</p>
+    <p class="meta"><a href="https://openid.net/wp-content/uploads/2025/10/Identity-Management-for-Agentic-AI.pdf">OpenID Foundation</a> • Oct 1</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>🔧 Repo/Tool of the Day</h2>
+
+  <div class="item">
+    <h3>🎮 <strong>OpenDLSS: Open Vulkan Reimplementation of Nvidia's DLSS 5 Neural Rendering</strong></h3>
+    <p>Someone built a fully open Vulkan reimplementation of Nvidia's DLSS 5 neural upscaling network, which means high-quality AI-driven rendering is no longer locked to Nvidia hardware. This is a significant win for AMD and Intel GPU users and for the open-source graphics community broadly.</p>
+    <p class="meta"><a href="https://github.com/maanHimself/OpenDLSS-NR">GitHub</a> • Sep 30</p>
+  </div>
+
+
+<div class="subscribe-box">
+    <h3>📬 Get the daily digest by email</h3>
+    <p>Subscribe and get Tech & AI Daily delivered to your inbox every morning.</p>
+    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <input type="text" name="name" placeholder="Name">
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field">
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg"></div>
+  </div>
+
+  <footer>
+    <p><em>Sources: Google Blog, Cloudflare Blog, CNBC, X / Twitter, Turbopuffer, TechPowerUp, 404 Media, Synopsys, OpenID Foundation, GitHub</em></p>
+    <p>Support Atomic News on <a href="https://ko-fi.com/at0micnews">Ko-fi</a></p>
+  </footer>
+
+  <script>
+    var SUBSCRIBE_URL = 'https://script.google.com/macros/s/AKfycbzebsi1yEfwPAAtBq_0GrzH5eiJBshruQp1OUpu1B2NkRSMtZMyEMX6H80JRO_EOI36/exec';
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      var form = document.getElementById('subscribe-form');
+      var btn = document.getElementById('subscribe-btn');
+      var msg = document.getElementById('subscribe-msg');
+      var email = form.email.value.trim();
+      var name = form.name.value.trim();
+      var website = form.website.value;
+
+      btn.disabled = true;
+      msg.className = 'subscribe-msg';
+      msg.textContent = 'Subscribing...';
+      msg.style.color = '#58a6ff';
+
+      fetch(SUBSCRIBE_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, name: name, lang: 'en', website: website, newsletter: 'tech-news' })
+      }).then(function() {
+        msg.className = 'subscribe-msg success';
+        msg.textContent = "✅ Subscribed! You'll receive the next edition.";
+        form.email.value = '';
+        form.name.value = '';
+      }).catch(function() {
+        msg.className = 'subscribe-msg error';
+        msg.textContent = '❌ Something went wrong. Please try again.';
+      }).finally(function() {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
